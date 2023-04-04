@@ -112,6 +112,20 @@ $(document).ready(function () {
       disableOnInteraction: false,
     },
   });
+
+    //partnersSlider Slider
+    var partnersSlider = new Swiper(".partnersSlider", {
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: "auto",
+      spaceBetween: 16,
+      speed: 1000,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+    });
+
   // quantity
   $(".plus").click(function () {
     $(this)

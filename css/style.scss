@@ -25,7 +25,7 @@
   margin: 0;
   padding: 0;
   outline: none;
-  direction: rtl;
+  direction: ltr;
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
@@ -126,7 +126,7 @@ input {
 [type="number"],
 [type="tel"],
 [type="url"] {
-  direction: rtl;
+  direction: ltr;
 }
 .swiperContainer {
   position: relative;
@@ -170,17 +170,17 @@ input {
     }
   }
   .swiper-button-next {
-    left: -60px;
-    right: unset;
-    @media (max-width: 1240px) {
-      left: 0px;
-    }
-  }
-  .swiper-button-prev {
     right: -60px;
     left: unset;
     @media (max-width: 1240px) {
       right: 0px;
+    }
+  }
+  .swiper-button-prev {
+    left: -60px;
+    right: unset;
+    @media (max-width: 1240px) {
+      left: 0px;
     }
     &::after {
       transform: scaleX(-1);
@@ -188,8 +188,8 @@ input {
   }
   .swiper-pagination {
     width: auto !important;
-    left: 50% !important;
-    transform: translateX(-50%);
+    right: 50% !important;
+    transform: translateX(50%);
     background-color: transparent;
     border-radius: 2px;
     padding: 0px 10px;
@@ -226,8 +226,8 @@ input {
 .select2-container--default
   .select2-selection--single
   .select2-selection__arrow {
-  left: 1px;
-  right: unset;
+  right: 1px;
+  left: unset;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -274,7 +274,7 @@ span.select2.select2-container.select2-container--default {
     align-items: center;
     gap: 4px;
     position: relative;
-    padding-left: 24px;
+    padding-right: 24px;
     &::after {
       content: "\f107";
       font-family: "Font Awesome 6 Pro";
@@ -282,7 +282,7 @@ span.select2.select2-container.select2-container--default {
       vertical-align: middle;
       font-size: 12px;
       position: absolute;
-      left: 8px;
+      right: 8px;
       top: 55%;
       transform: translateY(-50%);
       color: #777;
@@ -319,8 +319,8 @@ span.select2.select2-container.select2-container--default {
     &.show {
       top: calc(100% + 10px) !important;
       display: flex;
-      right: unset;
-      left: 0;
+      left: unset;
+      right: 0;
     }
     &::before {
       content: "";
@@ -329,7 +329,7 @@ span.select2.select2-container.select2-container--default {
       background-color: var(--whiteColor);
       position: absolute;
       top: -8px;
-      left: 24px;
+      right: 24px;
       transform: rotate(45deg);
       border-radius: 2px;
       z-index: -2;
@@ -343,7 +343,7 @@ span.select2.select2-container.select2-container--default {
       position: absolute;
       top: 0;
       z-index: -1;
-      left: 2px;
+      right: 2px;
       border-radius: 4px;
     }
   }
@@ -386,7 +386,7 @@ button {
 header {
   background-color: var(--whiteColor);
   position: sticky;
-  left: 0;
+  right: 0;
   width: 100%;
   z-index: 1024;
   transition: 1s ease-in-out;
@@ -480,7 +480,7 @@ header {
     align-items: center;
     gap: 8px;
     // flex: 1 300px;
-    margin-right: auto;
+    margin-left: auto;
     i {
       display: flex;
       justify-content: center;
@@ -491,12 +491,12 @@ header {
       border-radius: 100px;
       color: var(--whiteColor);
       position: absolute;
-      right: 8px;
+      left: 8px;
       font-size: 14px;
     }
     input {
       padding: 12px;
-      padding-right: 48px;
+      padding-left: 48px;
     }
   }
 }
@@ -513,8 +513,8 @@ header {
       position: relative;
       top: unset;
       bottom: unset;
-      right: unset;
       left: unset;
+      right: unset;
       color: #00897e;
       .swiper-pagination-current {
         font-size: 30px;
@@ -530,9 +530,9 @@ header {
     .swiper-button-next,
     .swiper-button-prev {
       position: relative;
-      right: unset;
-      top: unset;
       left: unset;
+      top: unset;
+      right: unset;
       bottom: unset;
       margin: 0 10px;
       cursor: pointer;
@@ -555,14 +555,14 @@ header {
       }
     }
     .swiper-button-next {
-      right: unset;
+      left: unset;
       &::after {
-        content: "\f105" !important;
+        content: "\f104" !important;
       }
     }
     .swiper-button-prev {
       &::after {
-        content: "\f105" !important;
+        content: "\f104" !important;
         transform: scaleX(-1);
       }
     }
@@ -591,7 +591,7 @@ header {
         background: #2b4e9ec1;
         position: absolute;
         bottom: 0;
-        right: 0;
+        left: 0;
         z-index: -1;
         transition: 0.3s ease-in-out;
       }
@@ -648,7 +648,7 @@ header {
   .swiperBtns {
     position: absolute;
     top: calc(50% - 20px);
-    left: 0;
+    right: 0;
     width: 100%;
     justify-content: space-between;
     @media (max-width: 768px) {
@@ -669,7 +669,7 @@ header {
   //   background: #ffffff;
   //   position: absolute;
   //   bottom: 0;
-  //   right: 45%;
+  //   left: 45%;
   //   z-index: 2;
   //   transition: 0.3s ease-in-out;
   //   transform: rotate(6deg);
@@ -681,7 +681,7 @@ header {
   //   background: #ffffff;
   //   position: absolute;
   //   bottom: 0;
-  //   left: 45%;
+  //   right: 45%;
   //   z-index: 2;
   //   transition: 0.3s ease-in-out;
   //   transform: rotate(-6deg);
@@ -708,7 +708,7 @@ header {
     background: var(--secondColor);
     position: absolute;
     transition: all 0.4s ease-in-out;
-    left: 0;
+    right: 0;
   }
   span {
     text-align: center;
@@ -734,8 +734,8 @@ header {
       animation: scaleUp 0.3s ease-in-out;
     }
     &::after {
-      left: auto;
-      right: 0;
+      right: auto;
+      left: 0;
       width: 100%;
     }
   }
@@ -865,7 +865,7 @@ header {
       }
       a {
         margin-top: auto;
-        margin-right: auto;
+        margin-left: auto;
       }
     }
   }
@@ -896,11 +896,11 @@ header {
         height: 100%;
         text-align: start;
         &::after {
-          background-image: linear-gradient(60deg, #d3336bb3, #2e54ade6),
+          background-image: linear-gradient(60deg, #354e9ce6, #2e54ade6),
             url(../img/request.jpg);
           height: 100%;
           content: "";
-          left: 0px;
+          right: 0px;
           position: absolute;
           top: 0px;
           width: 100%;
@@ -1022,8 +1022,8 @@ header {
       width: 102%;
       height: 102%;
       position: absolute;
-      right: 0;
       left: 0;
+      right: 0;
       background-color: var(--mainColor30);
       z-index: -1;
       border-radius: 64px 0 64px 0;
@@ -1054,7 +1054,7 @@ header {
     //   z-index: -5;
     //   mix-blend-mode: luminosity;
     //   position: absolute;
-    //   left: 0;
+    //   right: 0;
     //   top: 0;
     //   object-fit: cover;
     //   opacity: .3;
@@ -1156,7 +1156,7 @@ footer {
 }
 .heroBanner {
   padding: 40px 10px;
-  background: linear-gradient(90deg, #2b4e9e79, #2b4e9eed),
+  background: linear-gradient(to left, #2b4e9e79, #2b4e9eed),
     url(../img/13722099_5328478.jpg);
   background-size: cover, 100px 100px;
   color: var(--whiteColor);
@@ -1200,16 +1200,16 @@ footer {
     padding: 1.5rem 0;
     &::before {
       position: absolute;
-      right: calc(4.5rem * 0.5);
+      left: calc(4.5rem * 0.5);
       height: calc(50% - 4.5rem * 0.5);
-      border-right: 1px dashed #777;
+      border-left: 1px dashed #777;
       top: 0;
     }
     &::after {
       position: absolute;
-      right: calc(4.5rem * 0.5);
+      left: calc(4.5rem * 0.5);
       height: calc(50% - 4.5rem * 0.5);
-      border-right: 1px dashed #777;
+      border-left: 1px dashed #777;
       bottom: 0;
     }
     &:not(:first-child) {
@@ -1234,7 +1234,7 @@ footer {
     &::before {
       position: absolute;
       top: 0;
-      right: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       transform: scale(0.5);
@@ -1261,7 +1261,7 @@ footer {
     z-index: 2;
   }
   .step-body {
-    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
   &.steps-hoverable {
     .step {
@@ -1322,8 +1322,8 @@ footer {
         width: 90%;
         height: 100%;
         top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
+        right: 50%;
+        transform: translateX(50%);
         border-radius: 12px;
         background-color: var(--mainColor30);
         z-index: -1;
@@ -1334,8 +1334,8 @@ footer {
         width: 80%;
         height: 100%;
         top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
+        right: 50%;
+        transform: translateX(50%);
         border-radius: 12px;
         background-color: var(--mainColor10);
         z-index: -2;
@@ -1362,8 +1362,8 @@ footer {
           width: 0%;
           height: 0%;
           top: 50%;
-          left: 50%;
-          transform: translateX(-50%) translateY(-50%);
+          right: 50%;
+          transform: translateX(50%) translateY(-50%);
           border-radius: 100px;
           background-color: var(--mainColor);
           z-index: -1;
@@ -1473,7 +1473,7 @@ footer {
       .earth {
         position: absolute;
         top: 50%;
-        left: 50%;
+        right: 50%;
         width: 80%;
         height: 80%;
         margin: -40%;
@@ -1487,7 +1487,7 @@ footer {
       .orbic {
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         width: 100%;
         height: 100%;
       }
@@ -1569,7 +1569,7 @@ footer {
         position: relative;
         .earth {
           top: 0;
-          left: 0;
+          right: 0;
           width: 100%;
           height: 100%;
           margin: 0;
@@ -1598,7 +1598,6 @@ footer {
     }
   }
 }
-
 .product {
   padding: 10px;
   // border: 1px solid #eee;
@@ -1693,7 +1692,7 @@ footer {
         align-items: center;
         position: absolute;
         top: 8px;
-        right: 8px;
+        left: 8px;
         z-index: 2;
         background-color: #e6e6e6;
         color: var(--textColor);
@@ -1705,7 +1704,6 @@ footer {
     }
   }
 }
-
 .shop {
   padding: 40px 20px;
   @media (max-width: 768px) {
@@ -1760,7 +1758,7 @@ footer {
       &::before {
         content: "";
         position: absolute;
-        right: 0;
+        left: 0;
         bottom: -1px;
         width: 100%;
         height: 2px;
@@ -1770,7 +1768,7 @@ footer {
       }
       .plus {
         position: absolute;
-        left: 8px;
+        right: 8px;
         top: calc(50% - 12px);
         width: 24px;
         height: 24px;
@@ -1778,7 +1776,7 @@ footer {
           content: "";
           position: absolute;
           top: 50%;
-          left: 0;
+          right: 0;
           width: 16px;
           height: 1px;
           background-color: var(--secondColor);
@@ -1789,7 +1787,7 @@ footer {
           content: "";
           position: absolute;
           top: 50%;
-          left: 0;
+          right: 0;
           width: 16px;
           height: 1px;
           background-color: var(--secondColor);
@@ -1821,7 +1819,6 @@ footer {
     border-radius: 16px;
     background-color: rgba(43, 78, 158, 0.05);
     // height: 100%;
-  
     .listShow {
       .product {
         flex-direction: row;
@@ -2082,11 +2079,11 @@ footer {
             text-transform: capitalize;
             font-size: 20px;
             color: #555;
-            margin-left: 35px;
+            margin-right: 35px;
             line-height: 26px;
             position: relative;
             @media (max-width: 768px) {
-              margin-left: 25px;
+              margin-right: 25px;
               font-size: 17px;
             }
             &.active {
@@ -2098,7 +2095,7 @@ footer {
           }
           &:last-child {
             & a {
-              margin-left: 0;
+              margin-right: 0;
             }
           }
         }
@@ -2113,7 +2110,7 @@ footer {
           border-bottom: 1px solid #ddd;
           & td {
             padding: 7px 17px;
-            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
             &:first-child {
               width: 30%;
             }
@@ -2160,18 +2157,18 @@ footer {
         &::before {
           background: #fcfcfc;
           border-bottom: 1px solid #dcdcdc;
-          border-right: 1px solid #dcdcdc;
+          border-left: 1px solid #dcdcdc;
           content: "";
           display: block;
           height: 10px;
-          right: -6px;
+          left: -6px;
           position: absolute;
           top: 10px;
           transform: rotate(-45deg);
           width: 10px;
           @media (max-width: 568px) {
             top: -6px;
-            right: 10px;
+            left: 10px;
             transform: rotate(225deg);
           }
         }
@@ -2258,7 +2255,6 @@ footer {
     }
   }
 }
-
 .cartPage {
   margin: 30px 0;
   .cart {
@@ -2267,12 +2263,10 @@ footer {
     padding: 8px;
     position: relative;
     border: 1px solid var(--mainColor30);
-    margin-left: 20px;
-
+    margin-right: 20px;
     @media (max-width: 768px) {
-      margin-left: 0;
+      margin-right: 0;
     }
-
     .cartProducts {
       display: flex;
       flex-direction: column;
@@ -2287,7 +2281,7 @@ footer {
         }
         a {
           display: block;
-          margin-left: 10px;
+          margin-right: 10px;
           img {
             height: 150px;
             min-width: 150px;
@@ -2357,17 +2351,17 @@ footer {
     .title {
       position: relative;
       font-weight: bold;
-      padding-right: 20px;
+      padding-left: 20px;
       &::before {
         content: "";
         width: 10px;
         height: 100%;
         background-color: var(--secondColor);
         position: absolute;
-        right: 0;
+        left: 0;
         top: 0;
-        border-top-left-radius: 100px;
-        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
       }
     }
     a {
@@ -2375,13 +2369,12 @@ footer {
       align-items: center;
       font-weight: bold;
       font-size: 16px !important;
-      padding-right: 10px;
+      padding-left: 10px;
     }
   }
   .checkout {
     background-color: var(--secondColor10);
     border: 1px solid var(--secondColor30);
-
     // height: 100%;
     border-radius: 16px;
     padding: 16px 8px;
@@ -2389,7 +2382,6 @@ footer {
       margin-top: 20px;
     }
   }
- 
   .bill {
     background-color: var(--whiteColor);
     border-radius: 16px;
@@ -2411,7 +2403,7 @@ footer {
         height: 72px;
         object-fit: contain;
         border-radius: 8px;
-        margin-left: 10px;
+        margin-right: 10px;
       }
       .info {
         p {
@@ -2426,11 +2418,117 @@ footer {
     }
   }
 }
-
-.favoritePage{
+.favoritePage {
   padding: 50px 0;
-  .product{
+  .product {
     box-shadow: var(--shadow);
+  }
+}
+.partners {
+  padding: 100px 0 60px;
+  background-image: linear-gradient(60deg, #2b4e9e8a, #2b4e9eed),
+    url(../img/map.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .swiper-slide {
+    width: auto;
+  }
+  .top {
+    margin-bottom: 48px;
+    text-align: center;
+
+    .title {
+      font-weight: bold;
+      color: var(--whiteColor);
+      margin-bottom: 16px;
+      font-size: 36px !important;
+      @media (max-width: 768px) {
+        font-size: 24px !important;
+      }
+    }
+    .hint {
+      color: #eee;
+      width: min(100% - 40px, 600px);
+      margin: auto;
+    }
+  }
+
+  .referenceLogo {
+    height: 150px;
+    padding: 10px 20px;
+    background-color: #ffffffe6;
+    border-radius: 24px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+.clients {
+  padding: 100px 0;
+  .top {
+    margin-bottom: 48px;
+
+    .title {
+      font-weight: bold;
+      color: var(--blackColor);
+      margin-bottom: 16px;
+      font-size: 36px !important;
+      @media (max-width: 768px) {
+        font-size: 24px !important;
+      }
+    }
+    .hint {
+      color: var(--textColor);
+      width: min(100% - 40px, 600px);
+    }
+  }
+
+  .client {
+    padding: 24px;
+    position: relative;
+    border: 1px solid var(--mainColor30);
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      @media (max-width: 768px) {
+        height: 110px;
+      }
+    }
+    span {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(#3768d8ce , #2b4e9e);
+      position: absolute;
+      right: 0;
+      bottom: -100%;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--whiteColor);
+      transition: 0.3s ease-in-out;
+
+      .name {
+        transform: translateY(50px);
+        transition: 0.6s ease-in-out;
+        padding: 24px;
+      }
+    }
+    &:hover {
+      span {
+        bottom: 0;
+        .name {
+          transform: translateY(0px);
+        }
+      }
+    }
   }
 }
 // //////////////////////////////////////////==================
@@ -2459,7 +2557,7 @@ footer {
 /* PC device :991px. */
 @media (min-width: 991px) {
   body {
-    font-size: 12px !important;
+    font-size: 13px !important;
   }
   h1 {
     font-size: 26px !important;
@@ -2481,7 +2579,7 @@ footer {
   }
   a,
   p {
-    font-size: 12px !important;
+    font-size: 13px !important;
   }
 }
 @media (max-width: 991px) {

@@ -8,13 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="" />
   <!-- title -->
-  <title> مؤسسة العامة التجارية </title>
+  <title> Alammah </title>
   <!-- favicon -->
   <link rel="icon" type="image/x-icon" href="img/fav.svg" />
   <!-- icons -->
   <link rel="stylesheet" href="css/all.css" />
   <!-- bootstrap -->
-  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
   <!-- aos -->
   <link rel="stylesheet" href="css/aos.css" />
   <!-- odometer -->
@@ -33,24 +33,24 @@
   <section class="topNav">
     <div class="container">
       <div class="links">
-        <a href="favorite.html"> <i class="fa-regular fa-heart"></i> <span> المفضلة </span></a>
-        <a href="cart.html"> <i class="fa-sharp fa-regular fa-cart-shopping"></i> <span> السلة </span></a>
+        <a href="favorite.html"> <i class="fa-regular fa-heart"></i> <span> Favorites </span></a>
+        <a href="cart.html"> <i class="fa-sharp fa-regular fa-cart-shopping"></i> <span> Cart </span></a>
       </div>
       <div class="dropDowns">
         <div class="dropdown">
           <button class="dropdown-toggle" data-bs-toggle="dropdown">
             <i class="fa-regular fa-globe"></i>
-            <span>اللغة</span>
+            <span>Language</span>
           </button>
           <div class="dropdown-menu">
-            <a class="dropdown-item active" href="#"> عربي </a>
+            <a class="dropdown-item active" href="#"> Arabic </a>
             <a class="dropdown-item" href="#"> English </a>
           </div>
         </div>
         <div class="dropdown">
           <button class="dropdown-toggle" data-bs-toggle="dropdown">
             <i class="fa-sharp fa-regular fa-circle-dollar"></i>
-            <span>العملة</span>
+            <span>Currency</span>
           </button>
           <div class="dropdown-menu">
             <a class="dropdown-item active" href="#"> SAR </a>
@@ -72,30 +72,30 @@
       <div class="collapse navbar-collapse" id="navControl">
         <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html"> الرئيسية </a>
+            <a class="nav-link active" href="index.html"> Home </a>
           </li>
           <li class="nav-item">
-           <a class="nav-link" href="shop.html"> المتجر </a>
+            <a class="nav-link" href="shop.html"> Shop </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html"> من نحن </a>
+            <a class="nav-link" href="about.html"> About Us </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contactUs.html"> تواصل معنا </a>
+            <a class="nav-link" href="contactUs.html"> Contact Us </a>
           </li>
           <li class="dropdown">
-            <a class="nav-link dropdown-toggle pe-4" href="#" data-bs-toggle="dropdown"> حسابي </a>
+            <a class="nav-link dropdown-toggle pe-4" href="#" data-bs-toggle="dropdown"> My Account </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#"> تسجيل دخول </a>
-              <a class="dropdown-item" href="#"> حسابي </a>
-              <a class="dropdown-item" href="#"> مشترياتي </a>
-              <a class="dropdown-item" href="#"> تسجيل خروج </a>
+              <a class="dropdown-item" href="#"> Sign In </a>
+              <a class="dropdown-item" href="#"> My Account </a>
+              <a class="dropdown-item" href="#"> My Purchases </a>
+              <a class="dropdown-item" href="#"> Sign Out </a>
             </div>
           </li>
         </ul>
         <div class="search">
           <i class="fa-sharp fa-light fa-magnifying-glass"></i>
-          <input type="search" class="form-control " placeholder="ما الذي تبحث عنه ..؟">
+          <input type="search" class="form-control " placeholder="What are you looking for?">
         </div>
       </div>
     </div>
@@ -110,43 +110,43 @@
       <div class="container">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html"> الرئيسية </a></li>
-            <li class="breadcrumb-item active" aria-current="page">  تواصل معنا </li>
+            <li class="breadcrumb-item"><a href="index.html"> Home </a></li>
+            <li class="breadcrumb-item active" aria-current="page"> Contact Us </li>
           </ol>
         </nav>
       </div>
     </section>
-   
     <section class="contactUs">
       <!-- contact form -->
       <div class="contactForm">
         <!-- form -->
-        <form action=""  data-aos="fade-up">
+        <form action="" data-aos="fade-up">
           <div class="col">
             <div class="inputFeild">
-              <label for=""> الاسم </label>
-              <input type="text" id="" placeholder=" الاسم بالكامل ">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Full name">
             </div>
             <div class="inputFeild">
-              <label for=""> الهاتف </label>
-              <input type="text" id="" placeholder=" مثال : 009650000000 ">
+              <label for="phone">Phone</label>
+              <input type="text" id="phone" placeholder="Example: 009650000000">
             </div>
           </div>
           <div class="col">
             <div class="inputFeild">
-              <label for=""> البريد الالكتروني </label>
-              <input type="text" id="" placeholder=" مثال : mail@mail.com">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Example: mail@mail.com">
             </div>
             <div class="inputFeild">
-              <label for=""> الموضوع </label>
-              <input type="text" id="" placeholder=" اكتب هنا ">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Write your subject here">
             </div>
           </div>
           <div class="inputFeild">
-            <label for=""> الرسالة </label>
-            <textarea name="" id="" rows="5" placeholder=" اكتب رسالتك "></textarea>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" placeholder="Write your message"></textarea>
           </div>
-          <button type="submit" class="btnDefault w-100"> <span class="w-100 justify-content-center">ارسال</span> </button>
+          <button type="submit" class="btnDefault w-100"> <span class="w-100 justify-content-center">Send</span>
+          </button>
         </form>
         <!-- animated map -->
         <div class="worldMap">
@@ -197,8 +197,8 @@
             </svg>
           </div>
           <div class="data">
-            <h4> موقعنا </h4>
-            <a target="_blank" href="https://goo.gl/maps/oaFKYhx5tUXXgEVL9"> الرياض - السعودية </a>
+            <h4>Our Location</h4>
+            <a target="_blank" href="https://goo.gl/maps/oaFKYhx5tUXXgEVL9">Riyadh - Saudi Arabia</a>
           </div>
         </div>
         <!-- col -->
@@ -224,7 +224,7 @@
             </svg>
           </div>
           <div class="data">
-            <h4> ارقام التواصل </h4>
+            <h4>Contact Numbers</h4>
             <!-- whatsapp -->
             <div class="info">
               <a href="https://api.whatsapp.com/send/?phone=%2B9665000000000&text&type=phone_number&app_absent=0"
@@ -297,17 +297,16 @@
             </svg>
           </div>
           <div class="data">
-            <h4> البريد اللإلكتروني </h4>
+            <h4>Email Address</h4>
             <a target="_blank" href="mailto:mail@mail.com.com"> mail@mail.com.com </a>
           </div>
         </div>
       </div>
       <!-- map -->
-      <iframe class="map"  data-aos="fade-up"
+      <iframe class="map" data-aos="fade-up"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463878.29488595825!2d46.82252880000001!3d24.725191849999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2z2KfZhNix2YrYp9i2INin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2seg!4v1674119472261!5m2!1sar!2seg"
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-
   </content>
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
   <!--((((((((((((((((( / content )))))))))))))))))))-->
@@ -318,29 +317,29 @@
       <div class="row">
         <div class="col-md-6 p-3 info">
           <img class="logo" src="img/logo.svg" alt="">
-          <p> مؤسسة غمز للتجارة، هي شريك ذو قيمة مضافة رائدة لأجهزة الاتصالات اللاسلكية وأجهزة نظام تحديد المواقع
-            العالمي وأجهزة الاتصالات عبر الأقمار الصناعية والمنتجات العسكرية وإنفاذ القانون في السوق السعودي. </p>
+          <p>Ghamz Trading Company is a leading value-added partner for wireless communication devices, GPS devices,
+            satellite communication devices, military and law enforcement products in the Saudi market.</p>
         </div>
         <div class="col-6 col-md-3 p-3">
-          <h5 class="fw-bold mb-3"> روابط هامة </h5>
+          <h5 class="fw-bold mb-3">Important Links</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted"> سياسة الخصوصية </a></li>
-            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted"> سیاسة الاسترجاع والاستبدال </a></li>
-            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted"> سياسة الدفع </a></li>
+            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">Return and Exchange Policy</a></li>
+            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">Payment Policy</a></li>
           </ul>
         </div>
         <div class="col-6 col-md-3 p-3">
-          <h5 class="fw-bold mb-3"> حسابي </h5>
+          <h5 class="fw-bold mb-3">My Account</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted"> حسابي </a></li>
-            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted"> سجل الطلبات </a></li>
-            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted"> أتصل بنا الآن </a></li>
+            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">My Account</a></li>
+            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">Order History</a></li>
+            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">Contact Us</a></li>
           </ul>
         </div>
       </div>
       <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top align-items-center"
         style="gap: 16px;">
-        <p> © كل الحقوق محفوظة <a href="#!" class="text-muted"> العامة </a> 2023 </p>
+        <p> © All rights reserved <a href="#!" class="text-muted">Public</a> 2023</p>
         <ul class="list-unstyled d-flex mb-0">
           <li class="ms-2">
             <a class="icon" href="#" target="_blank">
