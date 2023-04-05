@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <!-- title -->
+  <title> العامة</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="../img/fav.svg" />
+  <!-- icons -->
+  <link rel="stylesheet" href="../css/all.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
+  <!-- aos -->
+  <link rel="stylesheet" href="../css/aos.css" />
+  <!-- odometer -->
+  <link rel="stylesheet" href="../css/odometer.min.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <!-- fancybox -->
+  <link rel="stylesheet" href="../css/jquery.fancybox.min.css" />
+  <!-- select2 -->
+  <link rel="stylesheet" href="../css/select2.min.css" />
+  <!-- Custom style  -->
+  <link rel="stylesheet" href="../css/styleAR.css" />
+</head>
+<body>
+  <section class="topNav">
+    <div class="container">
+      <div class="links">
+        <a href="favorite.html"> <i class="fa-regular fa-heart"></i> <span> المفضلة </span></a>
+        <a href="cart.html"> <i class="fa-sharp fa-regular fa-cart-shopping"></i> <span> السلة </span></a>
+      </div>
+      <div class="dropDowns">
+        <div class="dropdown">
+          <button class="dropdown-toggle" data-bs-toggle="dropdown">
+            <i class="fa-regular fa-globe"></i>
+            <span> اللغة </span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item active" href="#"> عربي </a>
+            <a class="dropdown-item" href="../index.html"> English </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container"> <a class="logo" href="index.html"> <img src="../img/logo.svg" alt=""> </a> <button
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navControl"
+        aria-controls="navControl" aria-expanded="false" aria-label="Toggle navigation"> <span
+          class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navControl">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
+          <li class="nav-item"> <a class="nav-link active" href="index.html"> الصفحة الرئيسية </a> </li>
+          <li class="nav-item"> <a class="nav-link" href="shop.html"> المتجر </a> </li>
+          <li class="nav-item"> <a class="nav-link" href="about.html"> من نحن </a> </li>
+          <li class="nav-item"> <a class="nav-link" href="contactUs.html"> اتصل بنا </a> </li>
+          <li class="dropdown"> <a class="nav-link dropdown-toggle pe-4" href="#" data-bs-toggle="dropdown"> حسابي </a>
+            <div class="dropdown-menu"> <a class="dropdown-item" href="login.html"> تسجيل الدخول </a> <a
+                class="dropdown-item" href="register.html"> التسجيل </a> <a class="dropdown-item" href="purchases.html">
+                مشترياتي </a> <a class="dropdown-item" href="notification.html"> الإشعارات </a> <a class="dropdown-item"
+                href="setting.html"> إعدادات الحساب </a> <a class="dropdown-item" href="#"> تسجيل الخروج </a> </div>
+          </li>
+        </ul>
+        <div class="search"> <i class="fa-sharp fa-light fa-magnifying-glass"></i> <input type="search"
+            class="form-control " placeholder="ما الذي تبحث عنه؟"> </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ================ /Header ================= -->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((((( content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <content>
+    <!-- main slider -->
+    <section class="mainSlider">
+      <div class="swiper mainSliderContainer ">
+        <div class="swiper-wrapper"> <!-- swiper-slide -->
+          <div class="swiper-slide" style="background-image:url(../img/s2.jpg)">
+            <div class=" info">
+              <h4 class="hint">شركة التجارة العامة</h4>
+              <h1 class="sliderTitle"> خدمة استئجار المعدات في المملكة وفقًا لمدة مشروعك </h1> <a href="#!"
+                class="btnDefault"> <span>طلب الخدمة <i class="fa-regular fa-clipboard-check"></i> </span> </a>
+            </div>
+          </div> <!-- swiper-slide -->
+          <div class="swiper-slide" style="background-image:url(../img/s1.jpg)">
+            <div class=" info">
+              <h4 class="hint">حلول الاتصالات اللاسلكية</h4>
+              <h1 class="sliderTitle"> أجهزة الاتصال اللاسلكي اليدوية وأجهزة السيارات والأنظمة المتكاملة </h1> <a
+                href="#!" class="btnDefault"> <span>الاتصال بنا <i class="fa-regular fa-headset"></i> </span> </a>
+            </div>
+          </div> <!-- swiper-slide -->
+          <div class="swiper-slide" style="background-image:url(../img/s3.jpeg)">
+            <div class=" info">
+              <h4 class="hint">متجرنا الإلكتروني مفتوح الآن ، تصفح منتجاتنا</h4>
+              <h1 class="sliderTitle"> منتجات الاتصالات وأجهزة تحديد المواقع العالمية (GPS) </h1> <a href="#!"
+                class="btnDefault"> <span>شراء الآن <i class="fa-regular fa-cart-shopping"></i> </span> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiperBtns" data-aos="fade-down">
+        <div class="mainSliderNext swiper-button-next"></div>
+        <div class="mainSliderPrev swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section class="Features">
+      <div class="container">
+        <div class="row align-items-center g-3 pb-5">
+          <div class="col-md-6">
+            <div class="aboutUs">
+              <h1 data-aos="fade-up"> عن شركة التجارة العامة للتجارة </h1>
+              <p data-aos="fade-up">
+                شركة التجارة العامة العامة هي شريك مضاف للقيمة الرائد في أجهزة الاتصال اللاسلكية وأنظمة تحديد المواقع
+                العالمية (GPS)، وأجهزة الاتصال بالأقمار الصناعية، والمنتجات العسكرية، وإنفاذ القانون في السوق السعودية.
+                من خلال مشاريع البحث السوقي الدورية، التي تهدف إلى توفير وتطوير أحدث الحلول والمنتجات لأعلى المعايير
+                للبقاء في مقدمة السوق الاقتصادي التنافسي. اليوم، تعمل شركة التجارة العامة العامة بجد لكسب المزيد من
+                العملاء في السوق المحلية عن طريق توظيف موظفين مؤهلين وذوي خبرة وإدارة المنافسة الشديدة في المملكة في
+                مجموعة متنوعة من المجالات التي نعمل فيها.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 d-none d-md-block">
+            <div class="aboutImg " data-aos="fade-up">
+              <img src="../img/about.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="Feature">
+          <div class="row flex-wrap">
+            <!-- single Feature -->
+            <div class="col p-2 singleFeature " data-aos="fade-up">
+              <div class="info">
+                <div class="content">
+                  <div class="icon">
+                    <img src="../img/fav.svg" alt="">
+                  </div>
+                  <h4>أجهزة الاتصال اللاسلكي والسلكي</h4>
+                  <p> شركة العامة للتجارة هي مورد لأجهزة الاتصال اللاسلكية والسلكية الجديدة والمستعملة من العلامات
+                    التجارية الرائدة مثل موتورولا، هاريس، هايتيرا، آيكوم، كينوود، وتايت. </p>
+                </div>
+              </div>
+            </div>
+            <!-- single Feature -->
+            <div class="col p-2 singleFeature " data-aos="fade-up">
+              <div class="info">
+                <div class="content">
+                  <div class="icon">
+                    <img src="../img/fav.svg" alt="">
+                  </div>
+                  <h4>أجهزة GPS</h4>
+                  <p> شركة العامة هي مورد معتمد لأجهزة GPS (Garmin) للأفراد والشركات والحكومة. </p>
+                </div>
+              </div>
+            </div>
+            <!-- single Feature -->
+            <div class="col p-2 singleFeature " data-aos="fade-up">
+              <div class="info">
+                <div class="content">
+                  <div class="icon">
+                    <img src="../img/fav.svg" alt="">
+                  </div>
+                  <h4>لوازم المكاتب</h4>
+                  <p> نحن نوفر أثاث المكاتب المتكامل للشركات والأفراد وفقًا للمواصفات القياسية المناسبة للمستخدم
+                    النهائي. </p>
+                </div>
+              </div>
+            </div>
+            <!-- single Feature -->
+            <div class="col p-2 singleFeature " data-aos="fade-up">
+              <div class="info">
+                <div class="content">
+                  <div class="icon">
+                    <img src="../img/fav.svg" alt="">
+                  </div>
+                  <h4>معدات الدفاع والأمن</h4>
+                  <p> نحن نوفر حقائب الإسعافات الأولية العسكرية المجهزة بوسائل تكتيكية للبقاء على قيد الحياة للاستخدام
+                    من قبل الفرق العسكرية في مختلف فروع قوات الدفاع الوطني في المملكة العربية السعودية. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services -->
+    <section class="services">
+      <div class="container">
+        <!--  section Top -->
+        <div class="sectionTop">
+          <!-- Section Title -->
+          <div class="SectionTitle text-md-start">
+            <h1 class="title" data-aos="fade-up"> القطاعات الرئيسية التي خدمناها </h1>
+            <h6 class="hint" data-aos="fade-up"> لدينا كفاءة كافية لتقديم الخدمات والمنتجات لأكبر المؤسسات الخاصة
+              والحكومية والقطاعات!! </h6>
+          </div>
+        </div>
+        <!-- slider -->
+        <div class="swiper servicesSlider">
+          <div class="swiper-wrapper">
+            <!-- slide -->
+            <div class="swiper-slide">
+              <div class="flipCard" data-aos="zoom-in-up">
+                <div class="cardFront"
+                  style="background: linear-gradient(to top, #000000a3, #0000001a), url(../img/service1.jpg);">
+                  <div class="content">
+                    <h3>
+                      قطاع الدفاع والأمن العسكري
+                    </h3>
+                    <a href="#!" class="animatedLink">
+                      <i class="fa-light fa-bullseye-arrow"><span></span></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="cardBack">
+                  <div class="content">
+                    <img src="../img/logo.svg" alt="">
+                    <h5> قطاع الدفاع والأمن العسكري </h5>
+                    <p>
+                      الإمدادات العسكرية مثل الأصفاد والبنادق الصاعقة وخيام التخييم والحقائب ومستلزمات الإسعافات الأولية
+                    </p>
+                    <a href="#!" class="btnDefault"> <span>Details <i class="fa-light fa-arrow-left-long"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide -->
+            <div class="swiper-slide">
+              <div class="flipCard" data-aos="zoom-in-up">
+                <div class="cardFront"
+                  style="background: linear-gradient(to top, #000000a3, #0000001a), url(../img/service2.jpg);">
+                  <div class="content">
+                    <h3>
+                      القطاع البحري
+                    </h3>
+                    <a href="#!" class="animatedLink">
+                      <i class="fa-light fa-bullseye-arrow"><span></span></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="cardBack">
+                  <div class="content">
+                    <img src="../img/logo.svg" alt="">
+                    <h5>القطاع البحري</h5>
+                    <p>
+                      الإمدادات العسكرية مثل الأصفاد والبنادق الصاعقة وخيام التخييم والحقائب ومستلزمات الإسعافات الأولية
+                    </p>
+                    <a href="#!" class="btnDefault"> <span>Details <i class="fa-light fa-arrow-left-long"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide -->
+            <div class="swiper-slide">
+              <div class="flipCard" data-aos="zoom-in-up">
+                <div class="cardFront"
+                  style="background: linear-gradient(to top, #000000a3, #0000001a), url(../img/service3.jpg);">
+                  <div class="content">
+                    <h3>
+                      المقاولات
+                    </h3>
+                    <a href="#!" class="animatedLink">
+                      <i class="fa-light fa-bullseye-arrow"><span></span></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="cardBack">
+                  <div class="content">
+                    <img src="../img/logo.svg" alt="">
+                    <h5> المقاولات </h5>
+                    <p>
+                      الإمدادات العسكرية مثل الأصفاد والبنادق الصاعقة وخيام التخييم والحقائب ومستلزمات الإسعافات الأولية
+                    </p>
+                    <a href="#!" class="btnDefault"> <span> Details <i class="fa-light fa-arrow-left-long"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide -->
+            <div class="swiper-slide">
+              <div class="flipCard" data-aos="zoom-in-up">
+                <div class="cardFront"
+                  style="background: linear-gradient(to top, #000000a3, #0000001a), url(../img/service4.jpg);">
+                  <div class="content">
+                    <h3>
+                      قطاع البترول
+                    </h3>
+                    <a href="#!" class="animatedLink">
+                      <i class="fa-light fa-bullseye-arrow"><span></span></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="cardBack">
+                  <div class="content">
+                    <img src="../img/logo.svg" alt="">
+                    <h5> قطاع البترول </h5>
+                    <p>
+                      الإمدادات العسكرية مثل الأصفاد والبنادق الصاعقة وخيام التخييم والحقائب ومستلزمات الإسعافات الأولية
+                    </p>
+                    <a href="#!" class="btnDefault"> <span> Details <i class="fa-light fa-arrow-left-long"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- request Quote -->
+    <section class="requestQuote">
+      <div class="container">
+        <div class="request">
+          <h1> اطلب عرض الأسعار الآن </h1>
+          <button class="btnDefault"> <span> اطلب عرض الأسعار الآن </span> </button>
+        </div>
+      </div>
+    </section>
+    <!-- completed Projects -->
+    <section class="completedProjects">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 p-2">
+            <div class="title">
+              <h1 data-aos="fade-up"> المشاريع المكتملة </h1>
+              <p data-aos="fade-up"> على مدى السنوات القليلة الماضية ، اكتسبت مؤسسة التجارة العامة ثقة
+                عملائها في توريد نظام تحديد المواقع العالمي (GPS) في مختلف القطاعات في المملكة العربية السعودية
+                شبه الجزيرة العربية. لقد أكملنا عددًا من المشاريع المتميزة ، وإليكم بعضًا منها. </p>
+            </div>
+          </div>
+          <div class="col-lg-9 p-2">
+            <div class="row">
+              <div class="col-md-6 p-2">
+                <div class="project" data-aos="fade-up">
+                  <img src="../img/service1.jpg" alt="">
+                  <h6> توريد الآلات الموسيقية لفرق المشاة </h6>
+                  <p>
+                    تعاونت مؤسسة التجارة العامة مع كبرى الشركات المصنعة للموسيقى الأوروبية
+                    أدوات لتزويد مختلف الأدوات للفرق العسكرية ، مثل الطبول والساكسفون والمزامير ،
+                    بالإضافة إلى متطلبات ومواد مختلفة لتجهيز وإعداد الفرق العسكرية.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 p-2">
+                <div class="project" data-aos="fade-up">
+                  <img src="../img/service2.jpg" alt="">
+                  <h6> توريد معدات إسعافات أولية تكتيكية شخصية </h6>
+                  <p>
+                    مجموعات الإسعافات الأولية التكتيكية هي مجموعات من المواد المقاومة للصدمات والمواد الأساسية للحفاظ
+                    على الحياة
+                    السيطرة على النزيف وعلاج الجروح الكبيرة. وهي تشمل أيضًا أحزمة أخرى.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 p-2">
+                <div class="project" data-aos="fade-up">
+                  <img src="../img/s1.jpg" alt="">
+                  <h6> توريد أجهزة اتصال لاسلكية محمولة مصنوعة خصيصًا لتحمل الصدمات
+                    والانفجارات </h6>
+                  <p>
+                    قمنا بتوفير أجهزة اتصال لاسلكية مصممة للاستخدام في المناطق القابلة للانفجار من
+                    Motorola / MotoTurbo بجميع ملحقاتها للمقاول الرئيسي في قطاع النفط والغاز.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 p-2">
+                <div class="project" data-aos="fade-up">
+                  <img src="../img/s2.jpg" alt="">
+                  <h6> توريد مسدس صعق كهربائي من طراز Taser طراز X26P مع خراطيش لواحد من جهات إنفاذ القانون
+                    القطاعات في المملكة العربية السعودية </h6>
+                  <p>
+                    طراز Taser X26P هو السلاح الذكي الأصغر والأكثر إحكاما بمقبض ...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- clients -->
+    <section class="clients">
+      <div class="container">
+        <div class="top">
+          <h2 class="title" data-aos="fade-up"> عملاؤنا </h2>
+          <h6 class="hint" data-aos="fade-up">
+            عملاؤنا هم أساس نجاحنا ، ونسعى دائمًا لتقديم أفضل الخدمات لهم
+            والمنتجات. نحن نقدر ثقتهم بنا ونعمل بجد لتلبية احتياجاتهم وتجاوز توقعاتهم ،
+            مما يدفعنا إلى تحسين خدماتنا وتطوير علاقتنا معهم.
+          </h6>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-4 col-xl-3 p-2">
+            <div class="client" data-aos="fade-up">
+              <img src="../img/Minisrty-of-Commerce-and-Investment-01.svg" alt="">
+              <span>
+                <h6 class="name"> وزارة التجارة والاستثمار </h6>
+              </span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 p-2">
+            <div class="client" data-aos="fade-up">
+              <img src="../img/Ministry-of-Interior-01.svg" alt="">
+              <span>
+                <h6 class="name"> وزارة الداخلية </h6>
+              </span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 p-2">
+            <div class="client" data-aos="fade-up">
+              <img src="../img/Ministry-of-Labor-and-Social-Development.svg" alt="">
+              <span>
+                <h6 class="name"> وزارة العمل والتنمية الاجتماعية </h6>
+              </span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 p-2">
+            <div class="client" data-aos="fade-up">
+              <img src="../img/Monshaat-01.svg" alt="">
+              <span>
+                <h6 class="name"> منشأت </h6>
+              </span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 p-2">
+            <div class="client" data-aos="fade-up">
+              <img src="../img/Ministry-of-Labor-and-Social-Development.svg" alt="">
+              <span>
+                <h6 class="name"> وزارة العمل والتنمية الاجتماعية </h6>
+              </span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 p-2">
+            <div class="client" data-aos="fade-up">
+              <img src="../img/Minisrty-of-Commerce-and-Investment-01.svg" alt="">
+              <span>
+                <h6 class="name"> وزارة التجارة والاستثمار </h6>
+              </span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 p-2">
+            <div class="client" data-aos="fade-up">
+              <img src="../img/Ministry-of-Interior-01.svg" alt="">
+              <span>
+                <h6 class="name"> وزارة الداخلية </h6>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- partners -->
+    <section class="partners">
+      <div class="container">
+        <div class="top">
+          <h2 class="title"> شركاؤنا في النجاح </h2>
+          <h6 class="hint"> نسعى جاهدين لتقديم حلول مبتكرة وجذابة لهم ، ونعمل على تلبية احتياجاتهم
+            الاحتياجات والتوقعات ، وتجاوزها يساعدنا على النمو والتطور وتحقيق النجاح. </h6>
+        </div>
+        <div class="swiper partnersSlider ">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="referenceLogo ">
+                <img src="../img/Ministry-of-Interior-01.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="referenceLogo ">
+                <img src="../img/Minisrty-of-Commerce-and-Investment-01.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="referenceLogo ">
+                <img src="../img/Ministry-of-Labor-and-Social-Development.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="referenceLogo ">
+                <img src="../img/Monshaat-01.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+  </content>
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((( / content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!-- ================ Footer ================= -->
+  <footer class="pt-5">
+    <div class="container pt-4">
+      <div class="row">
+        <div class="col-md-6 p-3 info"> <img class="logo" src="../img/logo.svg" alt="">
+          <p>شركة العامة التجارية هي شريك قيم يتمتع بالريادة في السوق السعودي في مجال أجهزة الاتصال اللاسلكي وأجهزة نظام
+            تحديد المواقع GPS والاتصالات الفضائية والمنتجات العسكرية وإنفاذ القانون. </p>
+        </div>
+        <div class="col-6 col-md-3 p-3">
+          <h5 class="fw-bold mb-3">روابط هامة</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">سياسة الخصوصية</a></li>
+            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">سياسة الإرجاع والتبديل</a></li>
+            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">سياسة الدفع</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 p-3">
+          <h5 class="fw-bold mb-3">حسابي</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">حسابي</a></li>
+            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">تاريخ الطلبات</a></li>
+            <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">اتصل بنا</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top align-items-center"
+        style="gap: 16px;">
+        <p> © جميع الحقوق محفوظة <a href="#!" class="text-muted">العامة </a> 2023</p>
+        <ul class="list-unstyled d-flex mb-0">
+          <li class="ms-2"> <a class="icon" href="#" target="_blank"> <i class="fa-brands fa-twitter"></i> </a> </li>
+          <li class="ms-2"> <a class="icon" href="#" target="_blank"> <i class="fa-brands fa-facebook-f"></i> </a> </li>
+          <li class="ms-2"> <a class="icon" href="#" target="_blank"> <i class="fa-brands fa-snapchat-ghost"></i> </a>
+          </li>
+          <li class="ms-2"> <a class="icon" href="#" target="_blank"> <i class="fa-brands fa-instagram"></i> </a> </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- ================ /Footer ================= -->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--/////////////////////////////JavaScript/////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!-- jquery -->
+  <script src="../js/jquery.min.js"></script>
+  <!-- popper -->
+  <script src="../js/popper.min.js"></script>
+  <!-- bootstrap -->
+  <script src="../js/bootstrap.min.js"></script>
+  <!-- apper -->
+  <script src="../js/jquery.appear.js"></script>
+  <!-- animation on scroll -->
+  <script src="../js/aos.js"></script>
+  <!-- odometer counterUp  -->
+  <script src="../js/odometer.min.js"></script>
+  <!-- select2  -->
+  <script src="../js/select2.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- fancybox JS -->
+  <script src="../js/jquery.fancybox.min.js"></script>
+  <!-- custom -->
+  <script src="../js/custom.js"></script>
+</body>
+</html>

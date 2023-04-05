@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <!-- title -->
+  <title> العامة</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="../img/fav.svg" />
+  <!-- icons -->
+  <link rel="stylesheet" href="../css/all.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
+  <!-- aos -->
+  <link rel="stylesheet" href="../css/aos.css" />
+  <!-- odometer -->
+  <link rel="stylesheet" href="../css/odometer.min.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <!-- fancybox -->
+  <link rel="stylesheet" href="../css/jquery.fancybox.min.css" />
+  <!-- select2 -->
+  <link rel="stylesheet" href="../css/select2.min.css" />
+  <!-- Custom style  -->
+  <link rel="stylesheet" href="../css/styleAR.css" />
+</head>
+
+<body>
+  <section class="topNav">
+    <div class="container">
+      <div class="links">
+        <a href="favorite.html"> <i class="fa-regular fa-heart"></i> <span> المفضلة </span></a>
+        <a href="cart.html"> <i class="fa-sharp fa-regular fa-cart-shopping"></i> <span> السلة </span></a>
+      </div>
+      <div class="dropDowns">
+        <div class="dropdown">
+          <button class="dropdown-toggle" data-bs-toggle="dropdown">
+            <i class="fa-regular fa-globe"></i>
+            <span> اللغة </span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item active" href="#"> عربي </a>
+            <a class="dropdown-item" href="../index.html"> English </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container"> <a class="logo" href="index.html"> <img src="../img/logo.svg" alt=""> </a> <button
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navControl"
+        aria-controls="navControl" aria-expanded="false" aria-label="Toggle navigation"> <span
+          class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navControl">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
+          <li class="nav-item"> <a class="nav-link active" href="index.html"> الصفحة الرئيسية </a> </li>
+          <li class="nav-item"> <a class="nav-link" href="shop.html"> المتجر </a> </li>
+          <li class="nav-item"> <a class="nav-link" href="about.html"> من نحن </a> </li>
+          <li class="nav-item"> <a class="nav-link" href="contactUs.html"> اتصل بنا </a> </li>
+          <li class="dropdown"> <a class="nav-link dropdown-toggle pe-4" href="#" data-bs-toggle="dropdown"> حسابي </a>
+            <div class="dropdown-menu"> <a class="dropdown-item" href="login.html"> تسجيل الدخول </a> <a
+                class="dropdown-item" href="register.html"> التسجيل </a> <a class="dropdown-item" href="purchases.html">
+                مشترياتي </a> <a class="dropdown-item" href="notification.html"> الإشعارات </a> <a class="dropdown-item"
+                href="setting.html"> إعدادات الحساب </a> <a class="dropdown-item" href="#"> تسجيل الخروج </a> </div>
+          </li>
+        </ul>
+        <div class="search"> <i class="fa-sharp fa-light fa-magnifying-glass"></i> <input type="search"
+            class="form-control " placeholder="ما الذي تبحث عنه؟"> </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ================ /Header ================= -->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((((( content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <content>
+    <section class="profile">
+      <div class="container">
+        <!-- /user Header  -->
+        <div class="row">
+          <!-- links -->
+          <div class="col-md-5 col-lg-4 col-xl-3 p-1">
+            <!-- user Header  -->
+            <div class="userHeader">
+              <div class="userInfo">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="userName">
+                    <h3> محمد جمال </h3>
+                    <p> mail@mail.com </p>
+                  </div>
+                </div>
+                <div class="control">
+                  <a href="index.html" data-bs-toggle="tooltip" title="تسجيل الخروج"><i class="fas fa-power-off"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="profileNavCol">
+              <a href="purchases.html"> <i class="fa-solid fa-cart-flatbed-boxes me-2"></i> مشترياتي </a>
+              <a href="notification.html"> <i class="fas fa-bell me-2"></i> الإشعارات </a>
+              <a class="active" href="setting.html"><i class="fas fa-cog me-2"></i> إعدادات الحساب </a>
+              <a href="index.html"><i class="fas fa-power-off me-2"></i> تسجيل الخروج </a>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="col-md-7 col-lg-8 col-xl-9 p-2 profileContent">
+            <div class="editProfile">
+              <div class="head">
+                <h5> <i class="fas fa-user me-2"></i> المعلومات الشخصية </h5>
+              </div>
+              <form action="" class="row">
+                <div class="col-12 p-2">
+                  <label for="name" class="form-label"> <i class="fas fa-user me-2"></i> الاسم الكامل </label>
+                  <input type="text" class="form-control" id="name" placeholder="محمد جمال">
+                </div>
+                <div class="col-12 p-2">
+                  <label for="email" class="form-label"> <i class="fas fa-envelope me-2"></i> البريد الإلكتروني </label>
+                  <input type="email" class="form-control" id="email" placeholder="mail@mail.com">
+                </div>
+                <div class="col-md-6 p-2">
+                  <label for="password" class="form-label"> <i class="fas fa-key me-2"></i> كلمة المرور </label>
+                  <input type="password" class="form-control" id="password" placeholder="*****">
+                </div>
+                <div class="col-md-6 p-2">
+                  <label for="repetPassword" class="form-label"> <i class="fas fa-key me-2"></i> تأكيد كلمة المرور </label>
+                  <input type="password" class="form-control" id="repetPassword" placeholder="*****">
+                </div>
+                <div class="col-12 pt-4 p-2 text-center">
+                  <button type="submit" class="btnDefault">
+                    <span> تأكيد </span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </content>
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((( / content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!-- ================ Footer ================= -->
+  <footer class="pt-5"> <div class="container pt-4"> <div class="row"> <div class="col-md-6 p-3 info"> <img class="logo" src="../img/logo.svg" alt=""> <p>شركة العامة التجارية هي شريك قيم يتمتع بالريادة في السوق السعودي في مجال أجهزة الاتصال اللاسلكي وأجهزة نظام تحديد المواقع GPS والاتصالات الفضائية والمنتجات العسكرية وإنفاذ القانون. </p> </div> <div class="col-6 col-md-3 p-3"> <h5 class="fw-bold mb-3">روابط هامة</h5> <ul class="nav flex-column"> <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">سياسة الخصوصية</a></li> <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">سياسة الإرجاع والتبديل</a></li> <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">سياسة الدفع</a></li> </ul> </div> <div class="col-6 col-md-3 p-3"> <h5 class="fw-bold mb-3">حسابي</h5> <ul class="nav flex-column"> <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">حسابي</a></li> <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">تاريخ الطلبات</a></li> <li class="nav-item mb-2"><a href="#!" class="nav-link p-0 text-muted">اتصل بنا</a></li> </ul> </div> </div> <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top align-items-center" style="gap: 16px;"> <p> © جميع الحقوق محفوظة <a href="#!" class="text-muted">العامة </a> 2023</p> <ul class="list-unstyled d-flex mb-0"> <li class="ms-2"> <a class="icon" href="#" target="_blank"> <i class="fa-brands fa-twitter"></i> </a> </li> <li class="ms-2"> <a class="icon" href="#" target="_blank"> <i class="fa-brands fa-facebook-f"></i> </a> </li> <li class="ms-2"> <a class="icon" href="#" target="_blank"> <i class="fa-brands fa-snapchat-ghost"></i> </a> </li> <li class="ms-2"> <a class="icon" href="#" target="_blank"> <i class="fa-brands fa-instagram"></i> </a> </li> </ul> </div> </div> </footer>
+  <!-- ================ /Footer ================= -->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--/////////////////////////////JavaScript/////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!-- jquery -->
+  <script src="../js/jquery.min.js"></script>
+  <!-- popper -->
+  <script src="../js/popper.min.js"></script>
+  <!-- bootstrap -->
+  <script src="../js/bootstrap.min.js"></script>
+  <!-- apper -->
+  <script src="../js/jquery.appear.js"></script>
+  <!-- animation on scroll -->
+  <script src="../js/aos.js"></script>
+  <!-- odometer counterUp  -->
+  <script src="../js/odometer.min.js"></script>
+  <!-- select2  -->
+  <script src="../js/select2.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- fancybox JS -->
+  <script src="../js/jquery.fancybox.min.js"></script>
+  <!-- custom -->
+  <script src="../js/custom.js"></script>
+</body>
+
+</html>

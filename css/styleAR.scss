@@ -25,7 +25,7 @@
   margin: 0;
   padding: 0;
   outline: none;
-  direction: ltr;
+  direction: rtl;
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
@@ -112,7 +112,7 @@ input {
   accent-color: var(--mainColor) !important;
 }
 .odometer-inside {
-  direction: ltr !important;
+  direction: rtl !important;
 }
 .fancybox__container {
   z-index: 1999;
@@ -126,7 +126,7 @@ input {
 [type="number"],
 [type="tel"],
 [type="url"] {
-  direction: ltr;
+  direction: rtl;
 }
 .swiperContainer {
   position: relative;
@@ -170,17 +170,17 @@ input {
     }
   }
   .swiper-button-next {
-    right: -60px;
-    left: unset;
-    @media (max-width: 1240px) {
-      right: 0px;
-    }
-  }
-  .swiper-button-prev {
     left: -60px;
     right: unset;
     @media (max-width: 1240px) {
       left: 0px;
+    }
+  }
+  .swiper-button-prev {
+    right: -60px;
+    left: unset;
+    @media (max-width: 1240px) {
+      right: 0px;
     }
     &::after {
       transform: scaleX(-1);
@@ -188,8 +188,8 @@ input {
   }
   .swiper-pagination {
     width: auto !important;
-    right: 50% !important;
-    transform: translateX(50%);
+    left: 50% !important;
+    transform: translateX(-50%);
     background-color: transparent;
     border-radius: 2px;
     padding: 0px 10px;
@@ -226,8 +226,8 @@ input {
 .select2-container--default
   .select2-selection--single
   .select2-selection__arrow {
-  right: 1px;
-  left: unset;
+  left: 1px;
+  right: unset;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -258,7 +258,7 @@ span.select2.select2-container.select2-container--default {
 .fancybox__track,
 .fancybox__content,
 .carousel__track {
-  direction: ltr !important;
+  direction: rtl !important;
 }
 .navbar-toggler {
   border: none;
@@ -274,7 +274,7 @@ span.select2.select2-container.select2-container--default {
     align-items: center;
     gap: 4px;
     position: relative;
-    padding-right: 24px;
+    padding-left: 24px;
     &::after {
       content: "\f107";
       font-family: "Font Awesome 6 Pro";
@@ -282,7 +282,7 @@ span.select2.select2-container.select2-container--default {
       vertical-align: middle;
       font-size: 12px;
       position: absolute;
-      right: 8px;
+      left: 8px;
       top: 55%;
       transform: translateY(-50%);
       color: #777;
@@ -319,8 +319,8 @@ span.select2.select2-container.select2-container--default {
     &.show {
       top: calc(100% + 10px) !important;
       display: flex;
-      left: unset;
-      right: 0;
+      right: unset;
+      left: 0;
     }
     &::before {
       content: "";
@@ -329,7 +329,7 @@ span.select2.select2-container.select2-container--default {
       background-color: var(--whiteColor);
       position: absolute;
       top: -8px;
-      right: 24px;
+      left: 24px;
       transform: rotate(45deg);
       border-radius: 2px;
       z-index: -2;
@@ -343,7 +343,7 @@ span.select2.select2-container.select2-container--default {
       position: absolute;
       top: 0;
       z-index: -1;
-      right: 2px;
+      left: 2px;
       border-radius: 4px;
     }
   }
@@ -386,7 +386,7 @@ button {
 header {
   background-color: var(--whiteColor);
   position: sticky;
-  right: 0;
+  left: 0;
   width: 100%;
   z-index: 1024;
   transition: 1s ease-in-out;
@@ -483,7 +483,7 @@ header {
     align-items: center;
     gap: 8px;
     // flex: 1 300px;
-    margin-left: auto;
+    margin-right: auto;
     i {
       display: flex;
       justify-content: center;
@@ -494,12 +494,12 @@ header {
       border-radius: 100px;
       color: var(--whiteColor);
       position: absolute;
-      left: 8px;
+      right: 8px;
       font-size: 14px;
     }
     input {
       padding: 12px;
-      padding-left: 48px;
+      padding-right: 48px;
     }
   }
 }
@@ -516,8 +516,8 @@ header {
       position: relative;
       top: unset;
       bottom: unset;
-      left: unset;
       right: unset;
+      left: unset;
       color: #00897e;
       .swiper-pagination-current {
         font-size: 30px;
@@ -533,9 +533,9 @@ header {
     .swiper-button-next,
     .swiper-button-prev {
       position: relative;
-      left: unset;
-      top: unset;
       right: unset;
+      top: unset;
+      left: unset;
       bottom: unset;
       margin: 0 10px;
       cursor: pointer;
@@ -558,14 +558,14 @@ header {
       }
     }
     .swiper-button-next {
-      left: unset;
+      right: unset;
       &::after {
-        content: "\f104" !important;
+        content: "\f105" !important;
       }
     }
     .swiper-button-prev {
       &::after {
-        content: "\f104" !important;
+        content: "\f105" !important;
         transform: scaleX(-1);
       }
     }
@@ -594,7 +594,7 @@ header {
         background: #2b4e9ec1;
         position: absolute;
         bottom: 0;
-        left: 0;
+        right: 0;
         z-index: -1;
         transition: 0.3s ease-in-out;
       }
@@ -651,7 +651,7 @@ header {
   .swiperBtns {
     position: absolute;
     top: calc(50% - 20px);
-    right: 0;
+    left: 0;
     width: 100%;
     justify-content: space-between;
     @media (max-width: 768px) {
@@ -672,7 +672,7 @@ header {
   //   background: #ffffff;
   //   position: absolute;
   //   bottom: 0;
-  //   left: 45%;
+  //   right: 45%;
   //   z-index: 2;
   //   transition: 0.3s ease-in-out;
   //   transform: rotate(6deg);
@@ -684,7 +684,7 @@ header {
   //   background: #ffffff;
   //   position: absolute;
   //   bottom: 0;
-  //   right: 45%;
+  //   left: 45%;
   //   z-index: 2;
   //   transition: 0.3s ease-in-out;
   //   transform: rotate(-6deg);
@@ -712,7 +712,7 @@ header {
     background: var(--secondColor);
     position: absolute;
     transition: all 0.4s ease-in-out;
-    right: 0;
+    left: 0;
   }
   span {
     text-align: center;
@@ -738,8 +738,8 @@ header {
       animation: scaleUp 0.3s ease-in-out;
     }
     &::after {
-      right: auto;
-      left: 0;
+      left: auto;
+      right: 0;
       width: 100%;
     }
   }
@@ -869,7 +869,7 @@ header {
       }
       a {
         margin-top: auto;
-        margin-left: auto;
+        margin-right: auto;
       }
     }
   }
@@ -904,7 +904,7 @@ header {
             url(../img/request.jpg);
           height: 100%;
           content: "";
-          right: 0px;
+          left: 0px;
           position: absolute;
           top: 0px;
           width: 100%;
@@ -1026,8 +1026,8 @@ header {
       width: 102%;
       height: 102%;
       position: absolute;
-      left: 0;
       right: 0;
+      left: 0;
       background-color: var(--mainColor30);
       z-index: -1;
       border-radius: 64px 0 64px 0;
@@ -1058,7 +1058,7 @@ header {
     //   z-index: -5;
     //   mix-blend-mode: luminosity;
     //   position: absolute;
-    //   right: 0;
+    //   left: 0;
     //   top: 0;
     //   object-fit: cover;
     //   opacity: .3;
@@ -1160,7 +1160,7 @@ footer {
 }
 .heroBanner {
   padding: 40px 10px;
-  background: linear-gradient(to left, #2b4e9e79, #2b4e9eed),
+  background: linear-gradient(to right, #2b4e9e79, #2b4e9eed),
     url(../img/13722099_5328478.jpg);
   background-size: cover, 100px 100px;
   color: var(--whiteColor);
@@ -1220,7 +1220,7 @@ footer {
     padding: 0;
     li {
       padding: 10px 20px;
-      padding-left: 15px;
+      padding-right: 15px;
       position: relative;
       &:last-child {
         &::after {
@@ -1233,7 +1233,7 @@ footer {
         height: 2px;
         background-color: var(--mainColor);
         position: absolute;
-        right: -5px;
+        left: -5px;
         top: calc(50% - 1px);
       }
       a {
@@ -1289,7 +1289,7 @@ footer {
       &::before {
         content: "";
         position: absolute;
-        right: 0;
+        left: 0;
         top: 50%;
         width: 100%;
         height: 2px;
@@ -1323,7 +1323,7 @@ footer {
   }
 }
 .otp {
-  direction: ltr;
+  direction: rtl;
   // border-bottom: 2px dashed #eee;
   padding: 20px 0px;
   display: flex;
@@ -1357,16 +1357,16 @@ footer {
     padding: 1.5rem 0;
     &::before {
       position: absolute;
-      left: calc(4.5rem * 0.5);
+      right: calc(4.5rem * 0.5);
       height: calc(50% - 4.5rem * 0.5);
-      border-left: 1px dashed #777;
+      border-right: 1px dashed #777;
       top: 0;
     }
     &::after {
       position: absolute;
-      left: calc(4.5rem * 0.5);
+      right: calc(4.5rem * 0.5);
       height: calc(50% - 4.5rem * 0.5);
-      border-left: 1px dashed #777;
+      border-right: 1px dashed #777;
       bottom: 0;
     }
     &:not(:first-child) {
@@ -1391,7 +1391,7 @@ footer {
     &::before {
       position: absolute;
       top: 0;
-      left: 0;
+      right: 0;
       width: 100%;
       height: 100%;
       transform: scale(0.5);
@@ -1418,7 +1418,7 @@ footer {
     z-index: 2;
   }
   .step-body {
-    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   &.steps-hoverable {
     .step {
@@ -1479,8 +1479,8 @@ footer {
         width: 90%;
         height: 100%;
         top: 10px;
-        right: 50%;
-        transform: translateX(50%);
+        left: 50%;
+        transform: translateX(-50%);
         border-radius: 12px;
         background-color: var(--mainColor30);
         z-index: -1;
@@ -1491,8 +1491,8 @@ footer {
         width: 80%;
         height: 100%;
         top: 20px;
-        right: 50%;
-        transform: translateX(50%);
+        left: 50%;
+        transform: translateX(-50%);
         border-radius: 12px;
         background-color: var(--mainColor10);
         z-index: -2;
@@ -1519,8 +1519,8 @@ footer {
           width: 0%;
           height: 0%;
           top: 50%;
-          right: 50%;
-          transform: translateX(50%) translateY(-50%);
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
           border-radius: 100px;
           background-color: var(--mainColor);
           z-index: -1;
@@ -1630,7 +1630,7 @@ footer {
       .earth {
         position: absolute;
         top: 50%;
-        right: 50%;
+        left: 50%;
         width: 80%;
         height: 80%;
         margin: -40%;
@@ -1644,7 +1644,7 @@ footer {
       .orbic {
         position: absolute;
         top: 0;
-        right: 0;
+        left: 0;
         width: 100%;
         height: 100%;
       }
@@ -1726,7 +1726,7 @@ footer {
         position: relative;
         .earth {
           top: 0;
-          right: 0;
+          left: 0;
           width: 100%;
           height: 100%;
           margin: 0;
@@ -1849,7 +1849,7 @@ footer {
         align-items: center;
         position: absolute;
         top: 8px;
-        left: 8px;
+        right: 8px;
         z-index: 2;
         background-color: #e6e6e6;
         color: var(--textColor);
@@ -1915,7 +1915,7 @@ footer {
       &::before {
         content: "";
         position: absolute;
-        left: 0;
+        right: 0;
         bottom: -1px;
         width: 100%;
         height: 2px;
@@ -1925,7 +1925,7 @@ footer {
       }
       .plus {
         position: absolute;
-        right: 8px;
+        left: 8px;
         top: calc(50% - 12px);
         width: 24px;
         height: 24px;
@@ -1933,7 +1933,7 @@ footer {
           content: "";
           position: absolute;
           top: 50%;
-          right: 0;
+          left: 0;
           width: 16px;
           height: 1px;
           background-color: var(--secondColor);
@@ -1944,7 +1944,7 @@ footer {
           content: "";
           position: absolute;
           top: 50%;
-          right: 0;
+          left: 0;
           width: 16px;
           height: 1px;
           background-color: var(--secondColor);
@@ -2236,11 +2236,11 @@ footer {
             text-transform: capitalize;
             font-size: 20px;
             color: #555;
-            margin-right: 35px;
+            margin-left: 35px;
             line-height: 26px;
             position: relative;
             @media (max-width: 768px) {
-              margin-right: 25px;
+              margin-left: 25px;
               font-size: 17px;
             }
             &.active {
@@ -2252,7 +2252,7 @@ footer {
           }
           &:last-child {
             & a {
-              margin-right: 0;
+              margin-left: 0;
             }
           }
         }
@@ -2267,7 +2267,7 @@ footer {
           border-bottom: 1px solid #ddd;
           & td {
             padding: 7px 17px;
-            border-right: 1px solid #ddd;
+            border-left: 1px solid #ddd;
             &:first-child {
               width: 30%;
             }
@@ -2314,18 +2314,18 @@ footer {
         &::before {
           background: #fcfcfc;
           border-bottom: 1px solid #dcdcdc;
-          border-left: 1px solid #dcdcdc;
+          border-right: 1px solid #dcdcdc;
           content: "";
           display: block;
           height: 10px;
-          left: -6px;
+          right: -6px;
           position: absolute;
           top: 10px;
           transform: rotate(45deg);
           width: 10px;
           @media (max-width: 568px) {
             top: -6px;
-            left: 10px;
+            right: 10px;
             transform: rotate(-225deg);
           }
         }
@@ -2420,9 +2420,9 @@ footer {
     padding: 8px;
     position: relative;
     border: 1px solid var(--mainColor30);
-    margin-right: 20px;
+    margin-left: 20px;
     @media (max-width: 768px) {
-      margin-right: 0;
+      margin-left: 0;
     }
     .cartProducts {
       display: flex;
@@ -2438,7 +2438,7 @@ footer {
         }
         a {
           display: block;
-          margin-right: 10px;
+          margin-left: 10px;
           img {
             height: 150px;
             min-width: 150px;
@@ -2508,7 +2508,7 @@ footer {
     .title {
       position: relative;
       font-weight: bold;
-      padding-left: 40px;
+      padding-right: 40px;
       text-transform: uppercase;
       &::before {
         content: "";
@@ -2516,10 +2516,10 @@ footer {
         height: 100%;
         background-color: var(--mainColor);
         position: absolute;
-        left: -8px;
+        right: -8px;
         top: 0;
-        border-top-right-radius: 100px;
-        border-bottom-right-radius: 100px;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
       }
     }
     a {
@@ -2527,7 +2527,7 @@ footer {
       align-items: center;
       font-weight: bold;
       font-size: 16px !important;
-      padding-left: 10px;
+      padding-right: 10px;
     }
   }
   .checkout {
@@ -2561,7 +2561,7 @@ footer {
         height: 72px;
         object-fit: contain;
         border-radius: 8px;
-        margin-right: 10px;
+        margin-left: 10px;
       }
       .info {
         p {
@@ -2660,7 +2660,7 @@ footer {
       height: 100%;
       background: linear-gradient(#3768d8ce, #2b4e9e);
       position: absolute;
-      right: 0;
+      left: 0;
       bottom: -100%;
       border-radius: 8px;
       display: flex;
@@ -2716,7 +2716,7 @@ footer {
       }
       .control {
         position: absolute;
-        right: 0;
+        left: 0;
         top: 5px;
         i {
           font-size: 28px;
@@ -2737,8 +2737,8 @@ footer {
             position: absolute;
             cursor: pointer;
             top: 0;
-            right: 0;
             left: 0;
+            right: 0;
             bottom: 0;
             background-color: #ccc;
             transition: 0.4s;
@@ -2749,7 +2749,7 @@ footer {
               content: "";
               height: 20px;
               width: 20px;
-              right: 4px;
+              left: 4px;
               bottom: 4px;
               background-color: white;
               transition: 0.4s;
@@ -2763,7 +2763,7 @@ footer {
             box-shadow: 0 0 1px #2196f3;
           }
           input:checked + .slider:before {
-            transform: translateX(22px);
+            transform: translateX(-22px);
           }
         }
       }
@@ -2792,7 +2792,7 @@ footer {
     margin-bottom: 50px;
     position: sticky;
     top: 90px;
-    right: 0;
+    left: 0;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -2806,7 +2806,7 @@ footer {
       border-radius: 8px;
       border: 1px solid #eee;
       i {
-        margin-right: 5px;
+        margin-left: 5px;
       }
       &.active,
       &:hover {
@@ -2912,7 +2912,7 @@ footer {
             height: 72px;
             object-fit: contain;
             border-radius: 8px;
-            margin-right: 10px;
+            margin-left: 10px;
           }
           .info {
             p {
