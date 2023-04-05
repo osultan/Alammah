@@ -97,47 +97,65 @@
   <!--((((((((((((((((((( content )))))))))))))))))))-->
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
   <content>
-    <!-- ================ banner ================= -->
-    <div class="banner">
-      <h1> Login </h1>
-      <ul>
-        <li> <a href="index.html"> Home </a> </li>
-        <li> <a href="#!" class="active"> Login </a> </li>
-      </ul>
-    </div>
-    <!-- ================  / banner ================= -->
-    <!-- login form -->
-    <section class="account">
-      <div class="container">
+    <section class="profile">
+      <div class="container ">
+        <!-- /user Header  -->
         <div class="row">
-          <div class="col-md-8 col-lg-6 m-auto p-2">
-            <div class="card">
-              <img class="loginImg" src="img/login.svg" alt="">
-              <form action="profile.html" class="row">
-                <div class="col-12 p-2">
-                  <label for="email" class="form-label"> <i class="fas fa-envelope me-2"></i> Email </label>
-                  <input type="email" class="form-control" id="email" placeholder=" exmple: mail@mail.com">
+          <!-- links -->
+          <div class="col-md-5 col-lg-4 col-xl-3 p-1">
+            <!-- user Header  -->
+            <div class=" userHeader">
+              <div class="userInfo">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="userName">
+                    <h3> Mohammed Gamal </h3>
+                    <p> mail@mail.com </p>
+                  </div>
                 </div>
+                <div class="control">
+                  <a href="index.html" data-bs-toggle="tooltip" title=" logout"><i class="fas fa-power-off"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="profileNavCol">
+              <a href="purchases.html"> <i class="fa-solid fa-cart-flatbed-boxes me-2"></i> My Purchases </a>
+              <a href="notification.html"> <i class="fas fa-bell me-2"></i> Notifications </a>
+              <a class="active" href="setting.html"><i class="fas fa-cog me-2"></i> Account Settings </a>
+              <a href="index.html"><i class="fas fa-power-off me-2"></i> Logout </a>
+            </div>
+          </div>
+          <!-- content -->
+          <div class=" col-md-7 col-lg-8 col-xl-9 p-2 profileContent">
+            <div class="editProfile">
+              <div class="head">
+                <h5> <i class="fas fa-user me-2"></i> Personal Information </h5>
+              </div>
+              <form action="" class="row">
                 <div class="col-12 p-2">
+                  <label for="name" class="form-label"> <i class="fas fa-user me-2"></i> Full Name </label>
+                  <input type="text" class="form-control" id="name" placeholder="mohamed Gamal">
+                </div>
+            
+                <div class="col-12 p-2">
+                  <label for="email" class="form-label"> <i class="fas fa-envelope me-2"></i> Email Address </label>
+                  <input type="email" class="form-control" id="email" placeholder="mail@mail.com">
+                </div>
+            
+                <div class="col-md-6 p-2">
                   <label for="password" class="form-label"> <i class="fas fa-key me-2"></i> Password </label>
                   <input type="password" class="form-control" id="password" placeholder="*****">
                 </div>
-                <div class="col-12 p-2">
-                  <div class="d-flex justify-content-between ">
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="remember">
-                      <label class="form-check-label" for="remember"> Remember Me </label>
-                    </div>
-                    <a href="forget-password.html"> Forget Password ? </a>
-                  </div>
+                <div class="col-md-6 p-2">
+                  <label for="repetPassword" class="form-label"> <i class="fas fa-key me-2"></i> Confirm Password
+                  </label>
+                  <input type="password" class="form-control" id="repetPassword" placeholder="*****">
                 </div>
-                <div class="col-12 p-2 text-center">
+                <div class="col-12 pt-4 p-2 text-center">
                   <button type="submit" class="btnDefault">
-                    <span> Login </span>
+                    <span> Confirm </span>
                   </button>
                 </div>
               </form>
-              <p class="text-center pt-4 pb-2"> Don't have an account? <a href="register.html">Register</a></p>
             </div>
           </div>
         </div>

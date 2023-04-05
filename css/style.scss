@@ -437,7 +437,7 @@ header {
     align-items: center;
     background-color: var(--whiteColor);
     border-radius: 8px;
-    .dropdown-toggle{
+    .dropdown-toggle {
       padding: 12px 24px;
     }
   }
@@ -704,6 +704,7 @@ header {
   border: 1px solid #fff;
   isolation: isolate;
   min-width: 48px;
+  min-height: 48px;
   &:after {
     content: " ";
     width: 0%;
@@ -1186,7 +1187,6 @@ footer {
     }
   }
 }
-
 .banner {
   background: linear-gradient(180deg, #f3f3f9af, #f3f3f9f8),
     url(../img/map.webp);
@@ -1199,11 +1199,9 @@ footer {
   align-items: center;
   background-attachment: fixed;
   text-align: center;
-
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     padding: 50px 0 30px;
   }
-
   h1 {
     font-weight: bold;
     color: var(--mainColor);
@@ -1213,7 +1211,6 @@ footer {
       font-size: 30px !important;
     }
   }
-
   ul {
     display: flex;
     align-items: center;
@@ -1239,7 +1236,6 @@ footer {
         right: -5px;
         top: calc(50% - 1px);
       }
-
       a {
         color: var(--mainColor);
         text-transform: capitalize;
@@ -1249,7 +1245,6 @@ footer {
     }
   }
 }
-
 .account {
   .card {
     isolation: isolate;
@@ -1275,7 +1270,7 @@ footer {
       color: var(--mainColor);
     }
   }
-  button[type="submit"]{
+  button[type="submit"] {
     min-height: 48px;
     min-width: 150px;
   }
@@ -1345,7 +1340,6 @@ footer {
     border-radius: 4px 4px 0 0;
   }
 }
-
 .aboutPage {
   padding-top: 70px;
 }
@@ -2327,12 +2321,12 @@ footer {
           left: -6px;
           position: absolute;
           top: 10px;
-          transform: rotate(-45deg);
+          transform: rotate(45deg);
           width: 10px;
           @media (max-width: 568px) {
             top: -6px;
             left: 10px;
-            transform: rotate(225deg);
+            transform: rotate(-225deg);
           }
         }
         .user {
@@ -2514,14 +2508,15 @@ footer {
     .title {
       position: relative;
       font-weight: bold;
-      padding-left: 20px;
+      padding-left: 40px;
+      text-transform: uppercase;
       &::before {
         content: "";
-        width: 10px;
+        width: 40px;
         height: 100%;
-        background-color: var(--secondColor);
+        background-color: var(--mainColor);
         position: absolute;
-        left: 0;
+        left: -8px;
         top: 0;
         border-top-right-radius: 100px;
         border-bottom-right-radius: 100px;
@@ -2536,8 +2531,8 @@ footer {
     }
   }
   .checkout {
-    background-color: var(--secondColor10);
-    border: 1px solid var(--secondColor30);
+    background-color: var(--mainColor10);
+    border: 1px solid var(--mainColor30);
     // height: 100%;
     border-radius: 16px;
     padding: 16px 8px;
@@ -2600,7 +2595,6 @@ footer {
   .top {
     margin-bottom: 48px;
     text-align: center;
-
     .title {
       font-weight: bold;
       color: var(--whiteColor);
@@ -2616,7 +2610,6 @@ footer {
       margin: auto;
     }
   }
-
   .referenceLogo {
     height: 150px;
     padding: 10px 20px;
@@ -2633,7 +2626,6 @@ footer {
   padding: 100px 0;
   .top {
     margin-bottom: 48px;
-
     .title {
       font-weight: bold;
       color: var(--blackColor);
@@ -2648,7 +2640,6 @@ footer {
       width: min(100% - 40px, 600px);
     }
   }
-
   .client {
     padding: 24px;
     position: relative;
@@ -2667,7 +2658,7 @@ footer {
     span {
       width: 100%;
       height: 100%;
-      background: linear-gradient(#3768d8ce , #2b4e9e);
+      background: linear-gradient(#3768d8ce, #2b4e9e);
       position: absolute;
       right: 0;
       bottom: -100%;
@@ -2677,7 +2668,6 @@ footer {
       align-items: center;
       color: var(--whiteColor);
       transition: 0.3s ease-in-out;
-
       .name {
         transform: translateY(50px);
         transition: 0.6s ease-in-out;
@@ -2694,6 +2684,274 @@ footer {
     }
   }
 }
+
+.profile {
+  padding: 50px 0;
+
+  .userHeader {
+    margin-bottom: 30px;
+    background-color: var(--whiteColor);
+    color: var(--mainColor);
+    border-radius: 20px;
+    box-shadow: var(--BigShadow);
+    padding: 20px;
+    @media (max-width: 768px) {
+      padding: 10px;
+    }
+    .userInfo {
+      position: relative;
+      margin: 0px 10px;
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 100%;
+        border: 3px solid var(--secondColor);
+      }
+      .userName {
+        h3 {
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: var(--blackColor);
+        }
+      }
+      .control {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        i {
+          font-size: 28px;
+          color: #ff0000;
+          cursor: pointer;
+        }
+        .switch {
+          position: relative;
+          width: 50px;
+          height: 28px;
+          margin: -3px 10px;
+          input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+          .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+            border-radius: 34px;
+            margin: 0px !important;
+            &:before {
+              position: absolute;
+              content: "";
+              height: 20px;
+              width: 20px;
+              right: 4px;
+              bottom: 4px;
+              background-color: white;
+              transition: 0.4s;
+              border-radius: 50%;
+            }
+          }
+          input:checked + .slider {
+            background-color: #2196f3;
+          }
+          input:focus + .slider {
+            box-shadow: 0 0 1px #2196f3;
+          }
+          input:checked + .slider:before {
+            transform: translateX(22px);
+          }
+        }
+      }
+    }
+    @media (max-width: 760px) {
+      .container {
+        padding: 0px !important;
+      }
+      .userInfo {
+        padding: 20px 10px;
+        img {
+          width: 80px;
+          height: 80px;
+        }
+        span {
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+  .profileNavCol {
+    background-color: var(--whiteColor);
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    position: sticky;
+    top: 90px;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    a {
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      color: var(--mainColor);
+      transition: var(--transition);
+      border-radius: 8px;
+      border: 1px solid #eee;
+      i {
+        margin-right: 5px;
+      }
+      &.active,
+      &:hover {
+        background-color: var(--mainColor);
+        color: var(--whiteColor);
+      }
+    }
+    @media (max-width: 760px) {
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      a {
+        padding: 12px 10px;
+        display: inline-flex;
+        margin: 3px 0px;
+        border-bottom: 1px solid var(--mainColor);
+        flex: 1 140px;
+      }
+    }
+ 
+  }
+  .profileContent{
+    .editProfile {
+      padding: 20px;
+      background-color: var(--whiteColor);
+      margin-bottom: 20px;
+      border-radius: 10px;
+      isolation: isolate;
+      box-shadow: var(--BigShadow);
+      .head {
+        background-color: var(--mainColor10);
+        color: var(--mainColor);
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        h5 {
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .notifications {
+      padding: 10px;
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        .notification {
+          padding: 20px;
+          background-color: #2b4d9e05;
+          border: 1px solid var(--mainColor10);
+          border-radius: 10px;
+          margin-bottom: 12px;
+          .notificationTitle {
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+          p {
+            color: #808080;
+            margin-bottom: 10px;
+          }
+          .date {
+            display: flex;
+            font-size: small;
+            i {
+              color: var(--mainColor);
+            }
+          }
+        }
+      }
+    }
+    .purchases{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .checkout {
+        background-color: var(--mainColor10);
+        border: 1px solid var(--mainColor30);
+        // height: 100%;
+        border-radius: 16px;
+        padding: 16px 8px;
+        @media (max-width: 768px) {
+          margin-top: 20px;
+        }
+      }
+      .bill {
+        background-color: var(--whiteColor);
+        border-radius: 16px;
+        margin-top: 20px;
+        padding: 8px;
+        list-style: none;
+        li {
+          display: flex;
+          align-items: center;
+          padding-top: 10px;
+          padding-bottom: 20px;
+          border-bottom: 1px dashed #eee;
+          &:last-child {
+            padding-bottom: 0px;
+            border-bottom: none;
+          }
+          img {
+            width: 72px;
+            height: 72px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 10px;
+          }
+          .info {
+            p {
+              font-weight: bold;
+              margin-bottom: 10px;
+            }
+            span {
+              color: var(--mainColor);
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .sectionTitle{
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: center;
+        padding: 0 24px;
+        flex-wrap: wrap;
+        .title{
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          text-transform: uppercase;
+          span{
+            font-weight: bold;
+            font-size: 20px;
+            color: var(--mainColor);
+          }
+        }
+      }
+    }
+  }
+}
+
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================
