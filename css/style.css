@@ -424,6 +424,7 @@ header {
 
 .topNav {
   background-color: var(--mainColor10);
+  padding: 0 12px;
 }
 .topNav .container {
   display: flex;
@@ -451,14 +452,6 @@ header {
   align-items: center;
   color: var(--blackColor);
 }
-@media (max-width: 576px) {
-  .topNav .links a span {
-    display: none;
-  }
-  .topNav .links a i {
-    font-size: 20px;
-  }
-}
 .topNav .links a i {
   color: var(--secondColor);
 }
@@ -467,8 +460,10 @@ header {
   gap: 24px;
   align-items: center;
   background-color: var(--whiteColor);
-  padding: 12px 24px;
   border-radius: 8px;
+}
+.topNav .dropDowns .dropdown-toggle {
+  padding: 12px 24px;
 }
 
 .navbar {
@@ -1195,6 +1190,164 @@ footer .icon:hover {
   .heroBanner h1 {
     font-size: 26px !important;
   }
+}
+
+.banner {
+  background: linear-gradient(180deg, rgba(243, 243, 249, 0.6862745098), rgba(243, 243, 249, 0.9725490196)), url(../img/map.webp);
+  background-size: cover;
+  padding: 100px 0 70px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .banner {
+    padding: 50px 0 30px;
+  }
+}
+.banner h1 {
+  font-weight: bold;
+  color: var(--mainColor);
+  font-size: 40px !important;
+  text-transform: capitalize;
+}
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 30px !important;
+  }
+}
+.banner ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+.banner ul li {
+  padding: 10px 20px;
+  padding-left: 15px;
+  position: relative;
+}
+.banner ul li:last-child::after {
+  display: none;
+}
+.banner ul li::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: var(--mainColor);
+  position: absolute;
+  right: -5px;
+  top: calc(50% - 1px);
+}
+.banner ul li a {
+  color: var(--mainColor);
+  text-transform: capitalize;
+}
+.account .card {
+  isolation: isolate;
+  padding: 30px;
+  margin-bottom: 50px;
+  border-radius: 14px;
+  box-shadow: var(--BigShadow);
+}
+@media (min-width: 992px) {
+  .account .card {
+    margin-top: -50px;
+  }
+}
+@media (max-width: 768px) {
+  .account .card {
+    padding: 30px 10px;
+  }
+}
+.account .card .loginImg {
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 20px 0 50px;
+}
+@media (max-width: 768px) {
+  .account .card .loginImg {
+    padding: 0 30px;
+  }
+}
+.account .card a {
+  color: var(--mainColor);
+}
+.account button[type=submit] {
+  min-height: 48px;
+  min-width: 150px;
+}
+.account .socialLogin {
+  text-align: center;
+}
+.account .socialLogin .line {
+  padding: 10px 20px;
+  margin: auto;
+  position: relative;
+}
+.account .socialLogin .line span {
+  background-color: #fff;
+  z-index: 2;
+  position: relative;
+  padding: 0px 20px;
+}
+.account .socialLogin .line::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #666;
+  border-radius: 10px;
+}
+.account .socialLogin .social {
+  display: flex;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.account .socialLogin .social .loginIcon {
+  padding: 10px 16px;
+  margin: 0px 5px;
+  width: 100%;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.account .socialLogin .social .loginIcon.facebook {
+  background-color: #4267b2;
+}
+.account .socialLogin .social .loginIcon.gmail {
+  background-color: #db4437;
+}
+.account .socialLogin .social .loginIcon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1882352941);
+}
+
+.otp {
+  direction: ltr;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.otp .otp-input {
+  min-width: 40px;
+  width: 100%;
+  height: 60px;
+  background-color: #eee;
+  border: none;
+  border-bottom: 2px solid var(--secondColor);
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px 4px 0 0;
 }
 
 .aboutPage {

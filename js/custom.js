@@ -112,20 +112,18 @@ $(document).ready(function () {
       disableOnInteraction: false,
     },
   });
-
-    //partnersSlider Slider
-    var partnersSlider = new Swiper(".partnersSlider", {
-      centeredSlides: true,
-      loop: true,
-      slidesPerView: "auto",
-      spaceBetween: 16,
-      speed: 1000,
-      autoplay: {
-        delay: 1500,
-        disableOnInteraction: false,
-      },
-    });
-
+  //partnersSlider Slider
+  var partnersSlider = new Swiper(".partnersSlider", {
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    speed: 1000,
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+  });
   // quantity
   $(".plus").click(function () {
     $(this)
@@ -153,6 +151,16 @@ $(document).ready(function () {
         .addClass("col-sm-6 col-lg-4 col-xl-3");
     }
   });
+
+
+  $('.product .content a').each(function() {
+    var text = $(this).text();
+    if (text.length > 70) {
+      var truncatedText = $.trim(text).substring(0, 70).split(" ").slice(0, -1).join(" ") + "...";
+      $(this).text(truncatedText);
+    }
+  });
+
 });
 // ////////////////////////////////////////
 // ////////////////////////////////////////

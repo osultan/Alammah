@@ -394,6 +394,7 @@ header {
 }
 .topNav {
   background-color: var(--mainColor10);
+  padding: 0 12px;
   .container {
     display: flex;
     gap: 16px;
@@ -417,14 +418,14 @@ header {
       gap: 4px;
       align-items: center;
       color: var(--blackColor);
-      @media (max-width: 576px) {
-        span {
-          display: none;
-        }
-        i {
-          font-size: 20px;
-        }
-      }
+      // @media (max-width: 576px) {
+      //   span {
+      //     display: none;
+      //   }
+      //   i {
+      //     font-size: 20px;
+      //   }
+      // }
       i {
         color: var(--secondColor);
       }
@@ -435,8 +436,10 @@ header {
     gap: 24px;
     align-items: center;
     background-color: var(--whiteColor);
-    padding: 12px 24px;
     border-radius: 8px;
+    .dropdown-toggle{
+      padding: 12px 24px;
+    }
   }
 }
 .navbar {
@@ -1183,6 +1186,166 @@ footer {
     }
   }
 }
+
+.banner {
+  background: linear-gradient(180deg, #f3f3f9af, #f3f3f9f8),
+    url(../img/map.webp);
+  background-size: cover;
+  padding: 100px 0 70px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  text-align: center;
+
+  @media (max-width:768px) {
+    padding: 50px 0 30px;
+  }
+
+  h1 {
+    font-weight: bold;
+    color: var(--mainColor);
+    font-size: 40px !important;
+    text-transform: capitalize;
+    @media (max-width: 768px) {
+      font-size: 30px !important;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    li {
+      padding: 10px 20px;
+      padding-left: 15px;
+      position: relative;
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+      &::after {
+        content: "";
+        width: 10px;
+        height: 2px;
+        background-color: var(--mainColor);
+        position: absolute;
+        right: -5px;
+        top: calc(50% - 1px);
+      }
+
+      a {
+        color: var(--mainColor);
+        text-transform: capitalize;
+        &.active {
+        }
+      }
+    }
+  }
+}
+
+.account {
+  .card {
+    isolation: isolate;
+    @media (min-width: 992px) {
+      margin-top: -50px;
+    }
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 14px;
+    box-shadow: var(--BigShadow);
+    @media (max-width: 768px) {
+      padding: 30px 10px;
+    }
+    .loginImg {
+      height: 200px;
+      object-fit: contain;
+      margin: 20px 0 50px;
+      @media (max-width: 768px) {
+        padding: 0 30px;
+      }
+    }
+    a {
+      color: var(--mainColor);
+    }
+  }
+  button[type="submit"]{
+    min-height: 48px;
+    min-width: 150px;
+  }
+  .socialLogin {
+    text-align: center;
+    .line {
+      padding: 10px 20px;
+      margin: auto;
+      position: relative;
+      span {
+        background-color: #fff;
+        z-index: 2;
+        position: relative;
+        padding: 0px 20px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: #666;
+        border-radius: 10px;
+      }
+    }
+    .social {
+      display: flex;
+      padding: 10px 0;
+      margin-bottom: 10px;
+      .loginIcon {
+        padding: 10px 16px;
+        margin: 0px 5px;
+        width: 100%;
+        border-radius: 4px;
+        color: #fff;
+        text-transform: capitalize;
+        &.facebook {
+          background-color: #4267b2;
+        }
+        &.gmail {
+          background-color: #db4437;
+        }
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0px 10px 20px #00000030;
+        }
+      }
+    }
+  }
+}
+.otp {
+  direction: ltr;
+  // border-bottom: 2px dashed #eee;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+  .otp-input {
+    min-width: 40px;
+    width: 100%;
+    height: 60px;
+    background-color: #eee;
+    border: none;
+    border-bottom: 2px solid var(--secondColor);
+    text-align: center;
+    font-size: 18px;
+    border-radius: 4px 4px 0 0;
+  }
+}
+
 .aboutPage {
   padding-top: 70px;
 }

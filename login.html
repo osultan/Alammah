@@ -47,7 +47,6 @@
             <a class="dropdown-item" href="#"> English </a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -96,145 +95,52 @@
   <!--((((((((((((((((((( content )))))))))))))))))))-->
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
   <content>
-        <!-- ================ banner ================= -->
+    <!-- ================ banner ================= -->
     <div class="banner">
-      <h1> Cart </h1>
+      <h1> Login </h1>
       <ul>
         <li> <a href="index.html"> Home </a> </li>
-        <li> <a href="#!" class="active"> Cart </a> </li>
+        <li> <a href="#!" class="active"> Login </a> </li>
       </ul>
     </div>
     <!-- ================  / banner ================= -->
-    <!--  -->
-    <div class="cartPage">
+    <!-- login form -->
+    <section class="account">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-7 p-0">
-            <div class="cart">
-              <!-- Cart Products -->
-              <div class="cartProducts">
-                <!-- Cart Product -->
-                <div class="cartProduct">
-                  <a href="productDetails.html">
-                    <img src="img/p1.jpg" class="productImg" alt="">
-                  </a>
-                  <div class="info">
-                    <h5 class="name">
-                      Motorola MT-777 Walkie-Talkie Two-Way Radio
-                    </h5>
-                    <!-- Control  -->
-                    <div class="control">
-                      <div class="quantity">
-                        <button class="min"> - </button>
-                        <input type="text" class="qty" value="1" />
-                        <button class="plus"> + </button>
-                      </div>
-                      <button class="delete">
-                        <i class="fa-solid fa-trash"></i>
-                      </button>
+          <div class="col-md-8 col-lg-6 m-auto p-2">
+            <div class="card">
+              <img class="loginImg" src="img/login.svg" alt="">
+              <form action="profile.html" class="row">
+                <div class="col-12 p-2">
+                  <label for="email" class="form-label"> <i class="fas fa-envelope me-2"></i> Email </label>
+                  <input type="email" class="form-control" id="email" placeholder=" exmple: mail@mail.com">
+                </div>
+                <div class="col-12 p-2">
+                  <label for="password" class="form-label"> <i class="fas fa-key me-2"></i> Password </label>
+                  <input type="password" class="form-control" id="password" placeholder="*****">
+                </div>
+                <div class="col-12 p-2">
+                  <div class="d-flex justify-content-between ">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="remember">
+                      <label class="form-check-label" for="remember"> Remember Me </label>
                     </div>
+                    <a href="forget-password.html"> Forget Password ? </a>
                   </div>
                 </div>
-                <!-- Cart Product -->
-                <div class="cartProduct">
-                  <a href="productDetails.html">
-                    <img src="img/p2.jpg" class="productImg" alt="">
-                  </a>
-                  <div class="info">
-                    <h5 class="name">
-                      Standard Horizon GX2200E VHF AIS GPS Marine Transceiver (Licensed by the Communications Authority)
-                    </h5>
-                    <!-- Control  -->
-                    <div class="control">
-                      <div class="quantity">
-                        <button class="min"> - </button>
-                        <input type="text" class="qty" value="1" />
-                        <button class="plus"> + </button>
-                      </div>
-                      <button class="delete">
-                        <i class="fa-solid fa-trash"></i>
-                      </button>
-                    </div>
-                  </div>
+                <div class="col-12 p-2 text-center">
+                  <button type="submit" class="btnDefault">
+                    <span> Login </span>
+                  </button>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-5 p-0">
-            <div class="checkout">
-              <div class="sectionTitle">
-                <h3 class="title"> Invoice </h3>
-              </div>
-              <!-- Bill -->
-              <ul class="bill">
-                <li>
-                  <img src="img/p1.jpg" alt="">
-                  <div class="info">
-                    <p>
-                      Motorola MT-777 Walkie-Talkie Two-Way Radio
-                    </p>
-                    <div class="count">
-                      x <span>2</span>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <img src="img/p2.jpg" alt="">
-                  <div class="info">
-                    <p>
-                      Standard Horizon GX2200E VHF AIS GPS Marine Transceiver (Licensed by the Communications Authority)
-                    </p>
-                    <div class="count">
-                      x <span>2</span>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <div class="d-flex justify-content-end py-2">
-                <!-- Modal Button -->
-                <button data-bs-toggle="modal" data-bs-target="#shipping" class="btnDefault">
-                  <span> Complete Order </span>
-                </button>
-                <!-- Modal -->
-                <div class="modal fade" id="shipping" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                  aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h6 class="modal-title fw-bold"> Shipping Information </h6>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <form>
-                          <div class="mb-3">
-                            <label for="phone" class="form-label"> <i class="fa-light fa-phone me-1"></i> Phone Number
-                            </label>
-                            <input type="number" class="form-control" id="phone" placeholder="+996**********">
-                          </div>
-                          <div class="mb-3">
-                            <label for="location" class="form-label"> <i class="fa-light fa-location-dot me-1"></i>
-                              Address </label>
-                            <input type="text" class="form-control" id="location"
-                              placeholder="Example: Riyadh Street 22">
-                          </div>
-                          <div class="d-flex justify-content-end mt-5 ">
-                            <button type="button" class="btn mx-1 btn-outline-dark" data-bs-dismiss="modal"> Cancel
-                            </button>
-                            <button type="submit" class="btnDefault mx-1">
-                              <span> Send </span>
-                            </button>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </form>
+              <p class="text-center pt-4 pb-2"> Don't have an account? <a href="register.html">Register</a></p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </content>
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
   <!--((((((((((((((((( / content )))))))))))))))))))-->
