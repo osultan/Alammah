@@ -820,8 +820,7 @@ header {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transform: rotateY(0deg);
   transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -852,8 +851,7 @@ header {
   border-radius: 20px;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transform: rotateY(180deg);
   transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1058823529);

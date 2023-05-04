@@ -35,6 +35,7 @@
       <div class="links">
         <a href="favorite.html"> <i class="fa-regular fa-heart"></i> <span> Favorites </span></a>
         <a href="cart.html"> <i class="fa-sharp fa-regular fa-cart-shopping"></i> <span> Cart </span></a>
+        <a href="shop.html"> <i class="fa-sharp fa-regular fa-shop"></i> <span> shop </span></a>
       </div>
       <div class="dropDowns">
         <div class="dropdown">
@@ -47,7 +48,6 @@
             <a class="dropdown-item active" href="#"> English </a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -66,7 +66,15 @@
             <a class="nav-link active" href="index.html"> Home </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="shop.html"> Shop </a>
+            <a class="nav-link" href="categories.html"> categories </a>
+          </li>
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle pe-4" href="#!" data-bs-toggle="dropdown"> solutions </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="solution.html"> Fleet Management Solutions </a>
+              <a class="dropdown-item" href="solution.html"> Cold Chain Management </a>
+              <a class="dropdown-item" href="solution.html"> Heavy Equipment </a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html"> About Us </a>
@@ -98,7 +106,7 @@
   <!--((((((((((((((((((( content )))))))))))))))))))-->
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
   <content>
-        <!-- ================ banner ================= -->
+    <!-- ================ banner ================= -->
     <div class="banner">
       <h1> Product Details </h1>
       <ul>
@@ -114,6 +122,8 @@
           <div class="col-lg-4 col-md-6 p-2">
             <!-- slider -->
             <div class="swiperContainer pb-4">
+              <span class="unavailable"> unavailable </span>
+
               <div class="swiper productDetailsSlider ">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -183,49 +193,101 @@
           <div class="col-12 p-0">
             <div class="detailsTabs">
               <ul class="nav nav-tabs">
+                <!-- link -->
                 <li class="nav-item">
-                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                    aria-controls="home-tab-pane">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#Features-pane"
+                    aria-controls="Features-pane">
+                    Features
+                  </button>
+                </li>
+                <!-- link -->
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#Additional-pane"
+                    aria-controls="Additional-pane">
+                    Additional
+                  </button>
+                </li>
+                <!-- link -->
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#Accessories-pane"
+                    aria-controls="Accessories-pane">
+                    Accessories
+                  </button>
+                </li>
+                <!-- link -->
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#Specifications-pane"
+                    aria-controls="Specifications-pane">
                     Specifications
                   </button>
                 </li>
+                <!-- link -->
                 <li class="nav-item">
-                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                    aria-controls="profile-tab-pane">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#DockingStations-pane"
+                    aria-controls="DockingStations-pane">
+                    DockingStations
+                  </button>
+                </li>
+                <!-- link -->
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#Reviews-pane"
+                    aria-controls="Reviews-pane">
                     Reviews (2)
                   </button>
                 </li>
               </ul>
               <div class="tab-content">
-                <div class="tab-pane fade show active" id="home-tab-pane" aria-labelledby="home-tab">
-                  <p class="productInfoContent">
-                    Baofeng R5 Walkie Talkie Wireless Radio, 5 Watts, 3.7 Volts, 16 Channels, 400-470 MHz<br>
-                    Product Description: UHF frequency range: 400-470 MHz<br>
-                    Operating Voltage: DC3.7V (Lithium-Ion Battery)<br>
-                    Antenna Resistance: 50Ω<br>
-                    Memory Channels: 16 groups<br>
-                    Size: 14 * 55 * 23 mm<br>
-                    Frequency Stability: ± 2.5 ppm<br>
-                    Operating Mode: Same frequency simplex or different frequency simplex<br>
-                  </p>
-                  <table class="infoTable table-bordered">
-                    <tbody>
-                      <tr>
-                        <td class="first_child">Brand</td>
-                        <td>Baofeng</td>
-                      </tr>
-                      <tr>
-                        <td class="first_child">Model</td>
-                        <td>Baofeng R5</td>
-                      </tr>
-                      <tr>
-                        <td class="first_child">Size</td>
-                        <td>14 * 55 * 23 mm</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <!-- tab -->
+                <div class="tab-pane fade show active" id="Features-pane" aria-labelledby="Features">
+                  <div class="tabInfo">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem aperiam sed voluptatum? Voluptatum
+                    excepturi sint iste sapiente est nostrum, temporibus error aliquam alias porro qui in deleniti
+                    voluptates ullam illum!
+                  </div>
                 </div>
-                <div class="tab-pane fade" id="profile-tab-pane" aria-labelledby="profile-tab">
+                <!-- tab -->
+                <div class="tab-pane fade" id="Additional-pane" aria-labelledby="Additional">
+                  <div class="tabInfo">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi consequuntur sapiente quas
+                    quia. Quas odit eveniet sed, quia culpa molestiae reprehenderit eligendi alias unde recusandae.
+                    Nulla modi rem id dolor.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem aperiam sed voluptatum? Voluptatum
+                    excepturi sint iste sapiente est nostrum, temporibus error aliquam alias porro qui in deleniti
+                    voluptates ullam illum!
+                  </div>
+                </div>
+                <!-- tab -->
+                <div class="tab-pane fade" id="Accessories-pane" aria-labelledby="Accessories">
+                  <div class="tabInfo">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi provident delectus labore eum,
+                    suscipit optio, nam animi officia consequuntur, ducimus ex quod numquam dignissimos aut
+                    praesentium possimus pariatur sed esse.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem aperiam sed voluptatum? Voluptatum
+                    excepturi sint iste sapiente est nostrum, temporibus error aliquam alias porro qui in deleniti
+                    voluptates ullam illum!
+                  </div>
+                </div>
+                <!-- tab -->
+                <div class="tab-pane fade" id="Specifications-pane" aria-labelledby="Specifications">
+                  <div class="btns">
+                    <a href="#!" class="btn btn-success"> Product Sheet </a>
+                    <a href="#!" class="btn btn-warning"> Quick Guide </a>
+                    <a href="#!" class="btn btn-secondary"> User Manual </a>
+                  </div>
+                </div>
+                <!-- tab -->
+                <div class="tab-pane fade" id="DockingStations-pane" aria-labelledby="DockingStations">
+                  <div class="tabInfo">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab esse voluptates sint officia dicta
+                    nemo. Voluptas aspernatur quos officiis nisi expedita! Facere, dicta saepe quidem qui minus ipsam.
+                    Et, voluptatibus.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem aperiam sed voluptatum? Voluptatum
+                    excepturi sint iste sapiente est nostrum, temporibus error aliquam alias porro qui in deleniti
+                    voluptates ullam illum!
+                  </div>
+                </div>
+                <!-- tab -->
+                <div class="tab-pane fade" id="Reviews-pane" aria-labelledby="Reviews">
                   <div class="reviews_wrapper">
                     <div class="reviews_comment_box">
                       <img src="img/user1.webp" class="comment_img">
@@ -326,7 +388,7 @@
       </div>
       <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top align-items-center"
         style="gap: 16px;">
-        <p> © All rights reserved <a href="#!" class="text-muted">Public</a> 2023</p>
+        <p> © All rights reserved <a href="#!" class="text-muted">Alammah</a> 2023</p>
         <ul class="list-unstyled d-flex mb-0">
           <li class="ms-2">
             <a class="icon" href="#" target="_blank">

@@ -35,6 +35,7 @@
       <div class="links">
         <a href="favorite.html"> <i class="fa-regular fa-heart"></i> <span> Favorites </span></a>
         <a href="cart.html"> <i class="fa-sharp fa-regular fa-cart-shopping"></i> <span> Cart </span></a>
+        <a href="shop.html"> <i class="fa-sharp fa-regular fa-shop"></i> <span> shop </span></a>
       </div>
       <div class="dropDowns">
         <div class="dropdown">
@@ -65,7 +66,15 @@
             <a class="nav-link active" href="index.html"> Home </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="shop.html"> Shop </a>
+            <a class="nav-link" href="categories.html"> categories </a>
+          </li>
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle pe-4" href="#!" data-bs-toggle="dropdown"> solutions </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="solution.html"> Fleet Management Solutions </a>
+              <a class="dropdown-item" href="solution.html"> Cold Chain Management </a>
+              <a class="dropdown-item" href="solution.html"> Heavy Equipment </a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html"> About Us </a>
@@ -121,12 +130,50 @@
               <!-- item -->
               <div class="accordionItem">
                 <!-- accordion Button -->
-                <button class="accordionButton" type="button" data-bs-toggle="collapse" data-bs-target="#filter1">
+                <button class="accordionButton" type="button" data-bs-toggle="collapse" data-bs-target="#filter0">
+                  Category
+                  <sapn class="plus"></sapn>
+                </button>
+                <!-- accordion data -->
+                <div id="filter0" class="collapse show">
+                  <div class="accordionData">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="filter0" id="filter0-1" checked>
+                      <label class="form-check-label" for="filter0-1"> <img src="img/i1.svg" alt=""> LAND VOICE </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="filter0" id="filter0-2">
+                      <label class="form-check-label" for="filter0-2"> <img src="img/i2.svg" alt=""> LAND DATA </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="filter0" id="filter0-3">
+                      <label class="form-check-label" for="filter0-3"> <img src="img/i3.svg" alt=""> M2M </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="filter0" id="filter0-4">
+                      <label class="form-check-label" for="filter0-4"> <img src="img/i4.svg" alt=""> Maritime </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="filter0" id="filter0-5">
+                      <label class="form-check-label" for="filter0-5"> <img src="img/i5.svg" alt=""> IoT, M2M Solutions & Services </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="filter0" id="filter0-6">
+                      <label class="form-check-label" for="filter0-6"> <img src="img/i6.svg" alt=""> Safety and Security Comms </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="accordionItem">
+                <!-- accordion Button -->
+                <button class="accordionButton collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#filter1">
                   Prand
                   <sapn class="plus"></sapn>
                 </button>
                 <!-- accordion data -->
-                <div id="filter1" class="collapse show">
+                <div id="filter1" class="collapse">
                   <div class="accordionData">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="filter1" id="filter1-1">
@@ -264,6 +311,7 @@
               <div class="row">
                 <div class="col-sm-6 col-lg-4 col-xl-3 p-1 showCol">
                   <div class="product" data-aos="fade-up">
+                    <span class="unavailable"> unavailable </span>
                     <div class="swiper productSlider ">
                       <div class="swiper-wrapper">
                         <!-- cv image -->
@@ -311,6 +359,8 @@
                 </div>
                 <div class="col-sm-6 col-lg-4 col-xl-3 p-1 showCol">
                   <div class="product" data-aos="fade-up">
+                    <span class="unavailable"> unavailable </span>
+
                     <div class="swiper productSlider ">
                       <div class="swiper-wrapper">
                         <!-- cv image -->
@@ -1034,7 +1084,7 @@
       </div>
       <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top align-items-center"
         style="gap: 16px;">
-        <p> © All rights reserved <a href="#!" class="text-muted">Public</a> 2023</p>
+        <p> © All rights reserved <a href="#!" class="text-muted">Alammah</a> 2023</p>
         <ul class="list-unstyled d-flex mb-0">
           <li class="ms-2">
             <a class="icon" href="#" target="_blank">
