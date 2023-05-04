@@ -483,7 +483,6 @@ content {
 }
 .navbar .logo {
   display: flex;
-  flex: 1 200px;
 }
 .navbar .logo img {
   height: 50px;
@@ -2257,9 +2256,17 @@ footer .icon:hover {
   background-color: #fcfcfc;
   border-radius: 16px;
 }
+.productDetailsPage .detailsTabs .nav-tabs {
+  gap: 4px;
+}
+.productDetailsPage .detailsTabs .nav-item {
+  flex: 1 150px;
+}
 .productDetailsPage .detailsTabs .nav-item .nav-link {
   color: var(--mainColor);
   text-transform: capitalize;
+  width: 100%;
+  background-color: var(--mainColor10);
 }
 .productDetailsPage .detailsTabs .nav-item .nav-link.active {
   background-color: var(--mainColor);
@@ -3141,6 +3148,47 @@ footer .icon:hover {
   margin: 0;
   flex-direction: column;
   gap: 8px;
+}
+
+.newsEvents {
+  padding: 20px 0;
+}
+.newsEvents .links {
+  position: sticky;
+  top: 100px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #fafafa;
+  border: 1px solid #f4f4f4;
+  padding: 16px;
+  border-radius: 12px;
+}
+.newsEvents .links a {
+  padding: 24px 12px;
+  border-radius: 8px;
+  color: var(--blackColor);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  isolation: isolate;
+  transition: var(--transition);
+  align-items: center;
+  font-size: 14px !important;
+  text-transform: capitalize;
+}
+.newsEvents .links a i {
+  font-size: 30px !important;
+}
+.newsEvents .links a.active {
+  color: var(--mainColor);
+  background-color: var(--mainColor30);
+}
+.newsEvents .links a.active::before {
+  width: 20px;
+  color: var(--mainColor);
 }
 
 .categoriesPage {
