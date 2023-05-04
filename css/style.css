@@ -1779,7 +1779,7 @@ footer .icon:hover {
   position: relative;
   overflow: hidden;
 }
-.product .unavailable {
+.product .countStatus {
   position: absolute;
   right: -50px;
   top: 20px;
@@ -2098,7 +2098,7 @@ footer .icon:hover {
   border-radius: 16px;
   margin-bottom: 10px;
 }
-.productDetailsPage .unavailable {
+.productDetailsPage .countStatus {
   position: absolute;
   right: -50px;
   top: 20px;

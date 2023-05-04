@@ -1776,7 +1776,7 @@ footer {
   gap: 16px;
   position: relative;
   overflow: hidden;
-  .unavailable{
+  .countStatus{
     position: absolute;
     right: -50px;
     top: 20px;
@@ -2092,7 +2092,7 @@ footer {
   background: var(--whiteColor);
   border-radius: 16px;
   margin-bottom: 10px;
-  .unavailable{
+  .countStatus{
     position: absolute;
     right: -50px;
     top: 20px;
