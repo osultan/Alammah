@@ -3408,6 +3408,7 @@ footer .icon:hover {
 .eventDetails .swiperContainer .eventSlider {
   position: relative;
   aspect-ratio: 2/1;
+  min-height: 400px;
   border-radius: 2px;
   width: 100%;
 }
@@ -3488,6 +3489,93 @@ footer .icon:hover {
 }
 .categoriesPage .categories .category:hover {
   transform: translateY(-10px);
+}
+
+.corporatePolicy {
+  padding: 20px 0;
+}
+.corporatePolicy .links {
+  position: sticky;
+  top: 100px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #fafafa;
+  border: 1px solid #f4f4f4;
+  padding: 16px;
+  border-radius: 12px;
+}
+.corporatePolicy .links a {
+  padding: 12px;
+  border-radius: 8px;
+  color: var(--blackColor);
+  display: flex;
+  gap: 12px;
+  position: relative;
+  isolation: isolate;
+  transition: var(--transition);
+  align-items: center;
+  font-size: 14px !important;
+}
+.corporatePolicy .links a::before {
+  content: "\f2f7";
+  font-family: "Font Awesome 6 Pro";
+  width: 10px;
+  background-color: var(--mainColor30);
+  border-radius: 8px;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blackColor);
+}
+.corporatePolicy .links a.active {
+  color: var(--mainColor);
+  background-color: var(--mainColor30);
+}
+.corporatePolicy .links a.active::before {
+  width: 20px;
+  color: var(--mainColor);
+}
+.corporatePolicy .links a:hover::before {
+  width: 20px;
+}
+.corporatePolicy .main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 24px;
+  margin-bottom: 48px;
+  border-bottom: 1px dashed #eee;
+}
+.corporatePolicy .main .title {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 30px !important;
+}
+@media (max-width: 768px) {
+  .corporatePolicy .main .title {
+    font-size: 24px !important;
+  }
+}
+.corporatePolicy .main img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  max-height: 500px;
+}
+.corporatePolicy .main .description {
+  color: #777;
+  line-height: 1.6;
+}
+.corporatePolicy ul {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  gap: 8px;
 }
 
 /* PC device :991px. */
