@@ -3150,7 +3150,7 @@ footer {
       align-items: center;
       font-size: 14px !important;
       text-transform: capitalize;
-      i{
+      i {
         font-size: 30px !important;
       }
       &.active {
@@ -3160,6 +3160,276 @@ footer {
           width: 20px;
           color: var(--mainColor);
         }
+      }
+    }
+  }
+  .blogs {
+    .blog {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: var(--transition);
+      padding-bottom: 48px;
+      img {
+        height: 250px;
+        object-fit: cover;
+        width: 100%;
+      }
+      .data {
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .date {
+        font-style: italic;
+        color: #777;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        color: var(--blackColor);
+        i {
+          color: var(--mainColor);
+          font-size: 16px;
+        }
+      }
+      .title {
+        color: var(--blackColor);
+        transition: var(--transition);
+      }
+      .description {
+        // margin-top: auto;
+        color: #777;
+      }
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--BigShadow);
+        .title {
+          color: var(--mainColor);
+        }
+      }
+    }
+  }
+  .events {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    .event {
+      display: flex;
+      gap: 12px;
+      transition: var(--transition);
+      flex-wrap: wrap;
+      img {
+        object-fit: cover;
+        flex: 1;
+        max-height: 250px;
+      }
+      .data {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        flex: 1 200px;
+      }
+      .date {
+        font-style: italic;
+        color: #777;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        color: var(--blackColor);
+        i {
+          color: var(--mainColor);
+          font-size: 16px;
+        }
+      }
+      .title {
+        color: var(--blackColor);
+        transition: var(--transition);
+      }
+      .description {
+        // margin-top: auto;
+        color: #777;
+      }
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--BigShadow);
+        .title {
+          color: var(--mainColor);
+        }
+      }
+    }
+  }
+}
+.blogDetails {
+  padding: 50px 0;
+  .blog {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: var(--transition);
+    padding-bottom: 48px;
+    // padding: 20px;
+    img {
+      aspect-ratio: 2/1;
+      object-fit: cover;
+      width: 100%;
+    }
+    .date {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      color: var(--blackColor);
+      font-style: italic;
+      color: #777;
+      i {
+        color: var(--mainColor);
+        font-size: 16px;
+      }
+    }
+    .title {
+      color: var(--blackColor);
+      transition: var(--transition);
+    }
+    .description {
+      color: #777;
+    }
+  }
+
+  .Moreblogs{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    height: 100%;
+    gap: 32px;
+
+    .headTitle{
+      text-transform: uppercase;
+      font-weight: bold;
+      display: flex;
+      gap: 12px;
+      &::before{
+        content: '';
+        width: 10px;
+        height: 100%;
+        background-color: var(--secondColor);
+        display: flex;
+        border-radius: 0 10px 0 10px;
+      }
+    }
+    .blog{
+      display: flex;
+      gap: 12px;
+      height: fit-content;
+      flex-direction: row;
+      padding-bottom: 0px;
+      padding: 0;
+      .data{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      img{
+        width: 120px;
+        height: 120px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+    }
+    
+  }
+}
+.eventDetails {
+  padding: 50px 0;
+  .event {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: var(--transition);
+    padding-bottom: 48px;
+    // padding: 20px;
+    img {
+      aspect-ratio: 2/1;
+      object-fit: cover;
+      width: 100%;
+    }
+    .date {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      color: var(--blackColor);
+      font-style: italic;
+      color: #777;
+      i {
+        color: var(--mainColor);
+        font-size: 16px;
+      }
+    }
+    .title {
+      color: var(--blackColor);
+      transition: var(--transition);
+    }
+    .description {
+      color: #777;
+    }
+  }
+  .swiperContainer {
+    border-radius: 2px;
+    .eventSlider {
+      position: relative;
+      aspect-ratio: 2/1;
+      border-radius: 2px;
+      width: 100%;
+      .swiper-slide {
+        position: relative;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 2px;
+          display: block;
+
+          cursor: zoom-in;
+        }
+      }
+    }
+    .swiper-button-next {
+      left: 10px;
+      top: unset;
+      right: unset;
+      bottom: 10px;
+      background-color: var(--secondColor);
+      &::after {
+        filter: invert(1);
+      }
+    }
+    .swiper-button-prev {
+      left: 55px;
+      right: unset;
+      top: unset;
+      bottom: 10px;
+      background-color: var(--secondColor);
+      &::after {
+        filter: invert(1);
+      }
+    }
+    .swiper-pagination {
+      right: 10px !important;
+      left: unset !important;
+      transform: translateX(0%);
+      .swiper-pagination-bullet {
+        background-color: var(--secondColor);
+      }
+      .swiper-pagination-bullet-active {
+        background-color: var(--secondColor);
       }
     }
   }
@@ -3192,6 +3462,9 @@ footer {
     }
   }
 }
+
+
+
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================

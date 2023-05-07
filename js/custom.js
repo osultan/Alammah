@@ -124,6 +124,29 @@ $(document).ready(function () {
       disableOnInteraction: false,
     },
   });
+
+
+    //project Details Slider
+    var eventSlider = new Swiper(".eventSlider", {
+      spaceBetween: 0,
+      loop: false,
+      // effect: "fade",
+      speed: 500,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".eventSliderPagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".eventSliderNext",
+        prevEl: ".eventSliderPrev",
+      },
+    });
+
+
   // quantity
   $(".plus").click(function () {
     $(this)
@@ -153,10 +176,17 @@ $(document).ready(function () {
   });
 
 
-  $('.product .content a').each(function() {
+  $('.product .content a , .Moreblogs .blog .description').each(function() {
     var text = $(this).text();
     if (text.length > 70) {
       var truncatedText = $.trim(text).substring(0, 70).split(" ").slice(0, -1).join(" ") + "...";
+      $(this).text(truncatedText);
+    }
+  });
+  $('.newsEvents .blogs .blog .description , .newsEvents .events .event .description  ').each(function() {
+    var text = $(this).text();
+    if (text.length > 150) {
+      var truncatedText = $.trim(text).substring(0, 150).split(" ").slice(0, -1).join(" ") + "...";
       $(this).text(truncatedText);
     }
   });

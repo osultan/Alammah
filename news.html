@@ -77,7 +77,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html"> About Us </a>
+            <a class="nav-link" href="about.html" class="title"> About Us </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="news.html"> News & Events </a>
@@ -109,129 +109,159 @@
   <!--((((((((((((((((((( content )))))))))))))))))))-->
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
   <content>
-    <section class="profile">
-      <div class="container ">
-        <!-- /user Header  -->
+    <!-- ================ banner ================= -->
+    <div class="banner">
+      <h3> News & Events </h3>
+      <ul>
+        <li> <a href="index.html"> Home </a> </li>
+        <li> <a href="#!" class="active"> News & Events </a> </li>
+      </ul>
+    </div>
+    <!-- ================  / banner ================= -->
+    
+    <!-- newsEvents -->
+    <section class="newsEvents">
+      <div class="container">
         <div class="row">
-          <!-- links -->
-          <div class="col-md-5 col-lg-4 col-xl-3 p-1">
-            <!-- user Header  -->
-            <div class=" userHeader">
-              <div class="userInfo">
-                <div class="d-flex flex-wrap align-items-center">
-                  <div class="userName">
-                    <h3> Mohammed Gamal </h3>
-                    <p> mail@mail.com </p>
-                  </div>
-                </div>
-                <div class="control">
-                  <a href="index.html" data-bs-toggle="tooltip" title=" logout"><i class="fas fa-power-off"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="profileNavCol">
-              <a class="active" href="purchases.html"> <i class="fa-solid fa-cart-flatbed-boxes me-2"></i> My
-                Purchases </a>
-              <a href="notification.html"> <i class="fas fa-bell me-2"></i> Notifications </a>
-              <a href="setting.html"><i class="fas fa-cog me-2"></i> Account Settings </a>
-              <a href="index.html"><i class="fas fa-power-off me-2"></i> Logout </a>
+          <div class="col-lg-4 col-xl-3 p-2">
+            <div class="links">
+              <a class="active" href="news.html">
+                <i class="fa-duotone fa-newspaper"></i>
+                news
+              </a>
+              <a href="events.html">
+                <i class="fa-duotone fa-calendar-days"></i>
+                Events
+              </a>
             </div>
           </div>
-          <!-- content -->
-          <div class=" col-md-7 col-lg-8 col-xl-9 p-2 profileContent">
-            <div class="purchases">
-              <div class="checkout">
-                <div class="sectionTitle">
-                  <h5 class="title">
-                    Operation Number
-                    <span> #4665132 </span>
-                  </h5>
-                  <p class="status text-danger"> Not approved </p>
+          <div class="col-lg-8 col-xl-9 p-2">
+            <div class="blogs">
+              <div class="row">
+                <div class="col-md-6 col-xl-4 p-1" data-aos="fade-up">
+                  <a href="blogDetails.html" class="blog">
+                    <img src="img/service1.jpg" alt="">
+                    <div class="data">
+                      <div class="date">
+                        <i class="fa-duotone fa-calendar-days"></i>
+                        10 / 10 / 2023
+                      </div>
+                      <h3 class="title"> Abu Dhabi International Boat Show (ADIBS) </h3>
+                      <p class="description">
+                        Organised by the Emirates Falconers' Club, ADIHEX 2019 provides an unparalleled opportunity for
+                        companies to build brand awareness, expand their client base, and connect with serious buyers
+                        over
+                        five days. Exhibitors
+                      </p>
+                    </div>
+                  </a>
                 </div>
-                <!-- Bill -->
-                <ul class="bill">
-                  <li>
-                    <img src="img/p1.jpg" alt="">
-                    <div class="info">
-                      <p>
-                        Motorola MT-777 Walkie-Talkie Two-Way Radio
-                      </p>
-                      <div class="count">
-                        x <span>2</span>
+                <div class="col-md-6 col-xl-4 p-1" data-aos="fade-up">
+                  <a href="blogDetails.html" class="blog">
+                    <img src="img/service2.jpg" alt="">
+                    <div class="data">
+                      <div class="date">
+                        <i class="fa-duotone fa-calendar-days"></i>
+                        10 / 10 / 2023
                       </div>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="img/p2.jpg" alt="">
-                    <div class="info">
-                      <p>
-                        Standard Horizon GX2200E VHF AIS GPS Marine Transceiver (Licensed by the Communications
-                        Authority)
+                      <h3 class="title"> CABSAT – 2018 </h3>
+                      <p class="description">
+                        Organised by the Emirates Falconers' Club, ADIHEX 2019 provides an unparalleled opportunity for
+                        companies to build brand awareness, expand their client base, and connect with serious buyers
+                        over
+                        five days. Exhibitors can take advantage of this unique networking opportunity to launch new
+                        products and services, and promote their brand to over 110,000 visitors including trade
+                        visitors,
+                        VIP personalities, members of the Royal Family and outdoor sports enthusiasts within the region
+                        and around the world.
                       </p>
-                      <div class="count">
-                        x <span>2</span>
-                      </div>
                     </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="checkout">
-                <div class="sectionTitle">
-                  <h5 class="title">
-                    Operation Number
-                    <span> #89430 </span>
-                  </h5>
-                  <p class="status text-success"> completed successfully </p>
+                  </a>
                 </div>
-                <!-- Bill -->
-                <ul class="bill">
-                  <li>
-                    <img src="img/p1.jpg" alt="">
-                    <div class="info">
-                      <p>
-                        Motorola MT-777 Walkie-Talkie Two-Way Radio
-                      </p>
-                      <div class="count">
-                        x <span>2</span>
+                <div class="col-md-6 col-xl-4 p-1" data-aos="fade-up">
+                  <a href="blogDetails.html" class="blog">
+                    <img src="img/service3.jpg" alt="">
+                    <div class="data">
+                      <div class="date">
+                        <i class="fa-duotone fa-calendar-days"></i>
+                        10 / 10 / 2023
                       </div>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="img/p2.jpg" alt="">
-                    <div class="info">
-                      <p>
-                        Standard Horizon GX2200E VHF AIS GPS Marine Transceiver (Licensed by the Communications
-                        Authority)
+                      <h3 class="title"> ABU DHABI INTERNATIONAL HUNTING & EQUESTRIAN EXHIBITION 2019 </h3>
+                      <p class="description">
+                        Organised by the Emirates Falconers' Club, ADIHEX 2019 provides an unparalleled opportunity for
+                        companies to build brand awareness, expand their client base, and connect with serious buyers
+                        over
+                        five days. Exhibitors can take advantage of this unique networking opportunity to launch new
+                        products and services, and promote their brand to over 110,000 visitors including trade
+                        visitors,
+                        VIP personalities, members of the Royal Family and outdoor sports enthusiasts within the region
+                        and around the world.
                       </p>
-                      <div class="count">
-                        x <span>2</span>
-                      </div>
                     </div>
-                  </li>
-                  <li>
-                    <img src="img/p1.jpg" alt="">
-                    <div class="info">
-                      <p>
-                        Motorola MT-777 Walkie-Talkie Two-Way Radio
+                  </a>
+                </div>
+                <div class="col-md-6 col-xl-4 p-1" data-aos="fade-up">
+                  <a href="blogDetails.html" class="blog">
+                    <img src="img/service4.jpg" alt="">
+                    <div class="data">
+                      <div class="date">
+                        <i class="fa-duotone fa-calendar-days"></i>
+                        10 / 10 / 2023
+                      </div>
+                      <h3 class="title"> Abu Dhabi International Boat Show (ADIBS) </h3>
+                      <p class="description">
+                        Organised by the Emirates Falconers' Club, ADIHEX 2019 provides an unparalleled opportunity for
+                        companies to build brand awareness, expand their client base, and connect with serious buyers
+                        over
+                        five days. Exhibitors
                       </p>
-                      <div class="count">
-                        x <span>2</span>
-                      </div>
                     </div>
-                  </li>
-                  <li>
-                    <img src="img/p2.jpg" alt="">
-                    <div class="info">
-                      <p>
-                        Standard Horizon GX2200E VHF AIS GPS Marine Transceiver (Licensed by the Communications
-                        Authority)
+                  </a>
+                </div>
+                <div class="col-md-6 col-xl-4 p-1" data-aos="fade-up">
+                  <a href="blogDetails.html" class="blog">
+                    <img src="img/s3.jpeg" alt="">
+                    <div class="data">
+                      <div class="date">
+                        <i class="fa-duotone fa-calendar-days"></i>
+                        10 / 10 / 2023
+                      </div>
+                      <h3 class="title"> CABSAT – 2018 </h3>
+                      <p class="description">
+                        Organised by the Emirates Falconers' Club, ADIHEX 2019 provides an unparalleled opportunity for
+                        companies to build brand awareness, expand their client base, and connect with serious buyers
+                        over
+                        five days. Exhibitors can take advantage of this unique networking opportunity to launch new
+                        products and services, and promote their brand to over 110,000 visitors including trade
+                        visitors,
+                        VIP personalities, members of the Royal Family and outdoor sports enthusiasts within the region
+                        and around the world.
                       </p>
-                      <div class="count">
-                        x <span>2</span>
-                      </div>
                     </div>
-                  </li>
-                </ul>
+                  </a>
+                </div>
+                <div class="col-md-6 col-xl-4 p-1" data-aos="fade-up">
+                  <a href="blogDetails.html" class="blog">
+                    <img src="img/about.jpg" alt="">
+                    <div class="data">
+                      <div class="date">
+                        <i class="fa-duotone fa-calendar-days"></i>
+                        10 / 10 / 2023
+                      </div>
+                      <h3 class="title"> ABU DHABI INTERNATIONAL HUNTING & EQUESTRIAN EXHIBITION 2019 </h3>
+                      <p class="description">
+                        Organised by the Emirates Falconers' Club, ADIHEX 2019 provides an unparalleled opportunity for
+                        companies to build brand awareness, expand their client base, and connect with serious buyers
+                        over
+                        five days. Exhibitors can take advantage of this unique networking opportunity to launch new
+                        products and services, and promote their brand to over 110,000 visitors including trade
+                        visitors,
+                        VIP personalities, members of the Royal Family and outdoor sports enthusiasts within the region
+                        and around the world.
+                      </p>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
