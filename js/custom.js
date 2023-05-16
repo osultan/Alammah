@@ -15,6 +15,27 @@ $(document).ready(function () {
   //   }
   //   prevScrollpos = currentScrollPos;
   // };
+
+  //videoSlider
+  var videoSlider = new Swiper(".videoSliderContainer", {
+    spaceBetween: 0,
+    // loop: true,
+    // effect: "fade",
+    speed: 500,
+    // autoplay: {
+    //   delay: 8000,
+    //   disableOnInteraction: false,
+    // },
+    pagination: {
+      el: ".videoSliderPagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".videoSliderNext",
+      prevEl: ".videoSliderPrev",
+    },
+  });
+
   //MainSlider
   var mainSlider = new Swiper(".mainSliderContainer", {
     spaceBetween: 0,
@@ -125,27 +146,25 @@ $(document).ready(function () {
     },
   });
 
-
-    //project Details Slider
-    var eventSlider = new Swiper(".eventSlider", {
-      spaceBetween: 0,
-      loop: false,
-      // effect: "fade",
-      speed: 500,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".eventSliderPagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".eventSliderNext",
-        prevEl: ".eventSliderPrev",
-      },
-    });
-
+  //project Details Slider
+  var eventSlider = new Swiper(".eventSlider", {
+    spaceBetween: 0,
+    loop: false,
+    // effect: "fade",
+    speed: 500,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".eventSliderPagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".eventSliderNext",
+      prevEl: ".eventSliderPrev",
+    },
+  });
 
   // quantity
   $(".plus").click(function () {
@@ -175,22 +194,25 @@ $(document).ready(function () {
     }
   });
 
-
-  $('.product .content a , .Moreblogs .blog .description').each(function() {
+  $(".product .content a , .Moreblogs .blog .description").each(function () {
     var text = $(this).text();
     if (text.length > 70) {
-      var truncatedText = $.trim(text).substring(0, 70).split(" ").slice(0, -1).join(" ") + "...";
+      var truncatedText =
+        $.trim(text).substring(0, 70).split(" ").slice(0, -1).join(" ") + "...";
       $(this).text(truncatedText);
     }
   });
-  $('.newsEvents .blogs .blog .description , .newsEvents .events .event .description  ').each(function() {
+  $(
+    ".newsEvents .blogs .blog .description , .newsEvents .events .event .description  "
+  ).each(function () {
     var text = $(this).text();
     if (text.length > 150) {
-      var truncatedText = $.trim(text).substring(0, 150).split(" ").slice(0, -1).join(" ") + "...";
+      var truncatedText =
+        $.trim(text).substring(0, 150).split(" ").slice(0, -1).join(" ") +
+        "...";
       $(this).text(truncatedText);
     }
   });
-
 });
 // ////////////////////////////////////////
 // ////////////////////////////////////////
