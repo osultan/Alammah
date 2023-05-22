@@ -2991,15 +2991,11 @@ footer .whatsIcon:hover {
   color: var(--mainColor);
 }
 
-.solutionPage {
-  padding: 50px 0;
-}
 .solutionPage .singleRow {
-  padding-bottom: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding-bottom: 60px;
+  padding: 60px 0;
+}
+.solutionPage .singleRow:nth-child(even) {
+  background-color: #f5f5f5;
 }
 .solutionPage .singleRow .rowTitle {
   font-weight: bold;
@@ -3007,6 +3003,7 @@ footer .whatsIcon:hover {
   flex-direction: column;
   color: var(--mainColor);
   text-transform: uppercase;
+  padding-bottom: 24px;
 }
 .solutionPage .singleRow .rowTitle .num {
   font-size: 50px;

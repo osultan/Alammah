@@ -3078,19 +3078,19 @@ footer {
 //   }
 // }
 .solutionPage{
-  padding: 50px 0;
-  .singleRow{
-    padding-bottom: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding-bottom: 60px;
+  // padding: 50px 0;
+  .singleRow{  
+    padding: 60px 0;
+    &:nth-child(even){
+      background-color: #f5f5f5;
+    }
     .rowTitle{
       font-weight: bold;
       display: flex;
       flex-direction: column;
       color: var(--mainColor);
       text-transform: uppercase;
+      padding-bottom: 24px;
       .num{
         font-size: 50px;
       }
@@ -3133,7 +3133,6 @@ footer {
         border-radius: 8px;
       }
     }
-
     .level{
       display: flex;
       flex-direction: column;
