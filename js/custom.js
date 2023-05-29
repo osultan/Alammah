@@ -16,6 +16,35 @@ $(document).ready(function () {
   //   prevScrollpos = currentScrollPos;
   // };
 
+  $(".mega .megaIcon").click(function () {
+    $(".mega .megaMenu").toggleClass("showMegaMenu");
+
+  });
+
+    //ourInvestorsSlider
+    var ourInvestorsSlider = new Swiper(".ourInvestorsSlider", {
+      spaceBetween: 12,
+      speed: 1000,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        // dragSize: 70,
+        draggable: true,
+        hide: false,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+      },
+    });
+
+
   //videoSlider
   var videoSlider = new Swiper(".videoSliderContainer", {
     spaceBetween: 0,

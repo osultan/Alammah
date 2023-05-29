@@ -476,9 +476,10 @@ content {
 }
 
 .navbar {
-  background-color: var(--whiteColor);
+  background-color: var(--mainColor);
   padding: 8px 0;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1254901961);
+  top: -1px;
 }
 .navbar .container {
   gap: 8px;
@@ -507,6 +508,7 @@ content {
 }
 .navbar .navbar-collapse .navbar-nav .nav-link {
   text-transform: capitalize;
+  color: var(--whiteColor);
 }
 @media (max-width: 768px) {
   .navbar .dropdown .dropdown-menu::before, .navbar .dropdown .dropdown-menu::after {
@@ -536,6 +538,90 @@ content {
 .navbar .search input {
   padding: 12px;
   padding-left: 48px;
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
+.navbar .dropdown .dropdown-toggle::after {
+  color: var(--whiteColor);
+}
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar .mega {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .mega .megaIcon {
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--whiteColor);
+  cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .navbar .mega .megaIcon {
+    display: none;
+  }
+}
+.navbar .mega .megaMenu {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  top: 100%;
+  background-color: var(--whiteColor);
+  padding: 24px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+.navbar .mega .megaMenu .category {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.navbar .mega .megaMenu .category img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.navbar .mega .megaMenu .category .list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.navbar .mega .megaMenu .category .list .title {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+.navbar .mega .megaMenu .category .list a {
+  padding: 2px 0;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 1200px) {
+  .navbar .mega:hover .megaMenu {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navbar .mega .megaMenu {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    overflow: auto;
+    height: 100vh;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1254901961);
+  }
+}
+
+.showMegaMenu {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .mainSlider {
@@ -797,7 +883,7 @@ content {
 }
 
 .services {
-  padding-top: 50px;
+  padding: 70px 0;
   overflow-x: hidden;
 }
 .services .swiper-wrapper {
@@ -2648,9 +2734,10 @@ footer .whatsIcon:hover {
 }
 .partners .referenceLogo {
   height: 150px;
+  max-width: 200px;
   padding: 10px 20px;
   background-color: rgba(255, 255, 255, 0.9019607843);
-  border-radius: 24px;
+  border-radius: 16px;
 }
 .partners .referenceLogo img {
   height: 100%;
@@ -3746,6 +3833,54 @@ footer .whatsIcon:hover {
 
 .fa-arrow-left-long {
   transform: scaleX(-1);
+}
+
+.ourInvestorsSlider .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ourInvestorsSlider .swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: relative;
+  left: unset;
+  bottom: unset;
+  z-index: unset;
+  height: 6px;
+  width: 100%;
+  flex: 1;
+  margin-top: 30px;
+  background-color: #eee;
+}
+.ourInvestorsSlider .swiper-scrollbar.swiper-scrollbar-horizontal .swiper-scrollbar-drag {
+  background-color: #cecece;
+  cursor: pointer;
+}
+
+.ourWorld {
+  padding: 70px 0;
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
+.ourWorld img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 300px;
+}
+.ourWorld .info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.ourWorld .info .btnDefault {
+  margin-top: 36px;
+}
+.ourWorld .title {
+  margin-bottom: 12px;
+}
+.ourWorld .title span {
+  font-weight: bold;
 }
 
 /* PC device :991px. */
