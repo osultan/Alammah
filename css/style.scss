@@ -583,8 +583,7 @@ content {
         gap: 4px;
         background-color: var(--mainColor10);
         height: 100%;
-        padding:  12px;
-        border-radius: 4px;
+        padding: 12px;
 
         button {
           display: flex;
@@ -598,8 +597,8 @@ content {
           &.active {
             background-color: var(--mainColor);
             color: var(--whiteColor);
-            img{
-              filter: invert(1)  grayscale(1)  ;
+            img {
+              filter: invert(1) grayscale(1);
             }
           }
         }
@@ -634,13 +633,24 @@ content {
     }
     @media screen and (max-width: 1200px) {
       .megaMenu {
-        width: 300px;
+        width: 345px;
         position: fixed;
         top: 0;
         z-index: 2;
         overflow: auto;
         height: 100vh;
         box-shadow: 5px 5px 20px #00000020;
+        padding: 12px 0;
+        .nav-pills {
+          flex-direction: row;
+          flex-wrap: wrap;
+          button {
+            flex: 1 100px;
+            flex-direction: column;
+            text-align: center;
+            padding: 12px !important;
+          }
+        }
       }
     }
   }
