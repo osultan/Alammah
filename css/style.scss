@@ -541,37 +541,86 @@ content {
       }
     }
     .megaMenu {
+      background-image: linear-gradient(#2b4e9ed5, #2b4e9eec),
+        url(../img/wireless-television-antenna-sign-download.jpg);
+      background-position: center;
+      background-size: cover;
       position: absolute;
       width: 100vw;
       left: 0;
       top: 100%;
-      background-color: var(--whiteColor);
-      padding: 24px 0;
+      // padding: 24px 0 12px;
       opacity: 0;
       visibility: hidden;
       transition: var(--transition);
-      .category {
+      box-shadow: var(--BigShadow);
+      // .category {
+      //   display: flex;
+      //   gap: 8px;
+      //   margin-bottom: 24px;
+      //   img {
+      //     width: 24px;
+      //     height: 24px;
+      //     object-fit: contain;
+      //   }
+      //   .list {
+      //     display: flex;
+      //     flex-direction: column;
+      //     gap: 2px;
+      //     .title {
+      //       font-weight: bold;
+      //       text-transform: capitalize;
+      //       margin-bottom: 4px;
+      //     }
+      //     a {
+      //       text-transform: capitalize;
+      //     }
+      //   }
+      // }
+      .nav-pills {
         display: flex;
-        gap: 8px;
-        margin-bottom: 24px;
-        img {
-          width: 24px;
-          height: 24px;
-          object-fit: contain;
-        }
-        .list {
+        flex-direction: column;
+        gap: 4px;
+        background-color: var(--mainColor10);
+        height: 100%;
+        padding:  12px;
+        border-radius: 4px;
+
+        button {
           display: flex;
-          flex-direction: column;
-          gap: 2px;
-          .title {
-            font-weight: bold;
-            text-transform: capitalize;
-            margin-bottom: 4px;
+          align-items: center;
+          text-align: start;
+          gap: 8px;
+          padding: 12px 8px;
+          padding-left: 12px;
+          transition: var(--transition);
+          border-radius: 4px;
+          &.active {
+            background-color: var(--mainColor);
+            color: var(--whiteColor);
+            img{
+              filter: invert(1)  grayscale(1)  ;
+            }
           }
-          a {
-            padding: 2px 0;
-            text-transform: capitalize;
-          }
+        }
+        img {
+          width: 20px;
+          height: 20px;
+          object-fit: contain;
+          transition: var(--transition);
+        }
+        .title {
+          text-transform: capitalize;
+        }
+      }
+      .tab-content {
+        padding: 24px;
+        a {
+          color: var(--whiteColor);
+          padding: 8px;
+          display: flex;
+          text-transform: capitalize;
+          font-weight: normal !important;
         }
       }
     }
@@ -593,13 +642,7 @@ content {
         height: 100vh;
         box-shadow: 5px 5px 20px #00000020;
       }
-     
     }
-
-    // .megaIcon:hover ~ .megaMenu {
-    //   opacity: 1;
-    //   visibility: visible;
-    // }
   }
 }
 .showMegaMenu {
@@ -3899,7 +3942,6 @@ footer {
   transform: scaleX(-1);
 }
 
-
 .ourInvestorsSlider {
   .swiper-slide {
     display: flex;
@@ -3924,28 +3966,44 @@ footer {
   }
 }
 
-
-.ourWorld{
+.ourWorld {
   padding: 70px 0;
-  background-color: var(--mainColor);
+  background-image: linear-gradient(#2b4e9ed5, #2b4e9eec),
+    url(../img/wireless-television-antenna-sign-download.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   color: var(--whiteColor);
-  img{
+  position: relative;
+  isolation: isolate;
+  // &::before{
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   display: flex;
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: -1;
+  //   background: #ffffff20;
+  //   backdrop-filter: blur(2px);
+  // }
+  img {
     width: 100%;
     aspect-ratio: 3/2;
     object-fit: cover;
-    max-height: 300px;
+    max-height: 350px;
   }
-  .info{
+  .info {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    .btnDefault{
+    .btnDefault {
       margin-top: 36px;
     }
   }
-  .title{
+  .title {
     margin-bottom: 12px;
-    span{
+    span {
       font-weight: bold;
     }
   }
