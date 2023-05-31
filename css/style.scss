@@ -581,9 +581,9 @@ content {
         display: flex;
         flex-direction: column;
         gap: 4px;
-        background-color: var(--mainColor10);
+        background-color: var(--mainColor);
         height: 100%;
-        padding: 12px;
+        padding: 12px 0;
 
         button {
           display: flex;
@@ -593,12 +593,13 @@ content {
           padding: 12px 8px;
           padding-left: 12px;
           transition: var(--transition);
-          border-radius: 4px;
+          color: var(--whiteColor);
           &.active {
-            background-color: var(--mainColor);
-            color: var(--whiteColor);
+            background-color: var(--mainColor30);
+            color: var(--mainColor);
+
             img {
-              filter: invert(1) grayscale(1);
+              filter: invert(0) grayscale(0);
             }
           }
         }
@@ -607,6 +608,7 @@ content {
           height: 20px;
           object-fit: contain;
           transition: var(--transition);
+          filter: invert(1) grayscale(1);
         } 
         .title {
           text-transform: capitalize;
