@@ -517,14 +517,12 @@ content {
       color: var(--whiteColor);
     }
   }
-
   .dropdown .dropdown-toggle::after {
     color: var(--whiteColor);
   }
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
-
   .mega {
     display: flex;
     align-items: center;
@@ -581,10 +579,9 @@ content {
         display: flex;
         flex-direction: column;
         gap: 4px;
-        background-color: var(--mainColor);
+        // background-color: var(--mainColor);
         height: 100%;
         padding: 12px 0;
-
         button {
           display: flex;
           align-items: center;
@@ -594,10 +591,10 @@ content {
           padding-left: 12px;
           transition: var(--transition);
           color: var(--whiteColor);
+          border-right: 1px solid var(--mainColor30);
           &.active {
             background-color: var(--mainColor30);
             color: var(--mainColor);
-
             img {
               filter: invert(0) grayscale(0);
             }
@@ -609,7 +606,7 @@ content {
           object-fit: contain;
           transition: var(--transition);
           filter: invert(1) grayscale(1);
-        } 
+        }
         .title {
           text-transform: capitalize;
         }
@@ -647,7 +644,9 @@ content {
           flex-direction: row;
           flex-wrap: wrap;
           button {
-            flex: 1 100px;
+            border-right: unset;
+            border-bottom: 1px solid var(--mainColor30);
+            flex: 1 130px;
             flex-direction: column;
             text-align: center;
             padding: 12px !important;
@@ -1255,7 +1254,6 @@ footer {
     align-items: center;
     justify-content: center;
     z-index: 88;
-
     i {
       font-size: 24px;
       color: var(--whiteColor);
@@ -3266,7 +3264,6 @@ footer {
     }
     .sub {
       padding-left: 8px;
-
       display: flex;
       align-items: center;
       gap: 4px;
@@ -3953,14 +3950,12 @@ footer {
 .fa-arrow-left-long {
   transform: scaleX(-1);
 }
-
 .ourInvestorsSlider {
   .swiper-slide {
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
-
   .swiper-scrollbar.swiper-scrollbar-horizontal {
     position: relative;
     left: unset;
@@ -3977,7 +3972,6 @@ footer {
     }
   }
 }
-
 .ourWorld {
   padding: 70px 0;
   background-image: linear-gradient(#2b4e9ed5, #2b4e9eec),

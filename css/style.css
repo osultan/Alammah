@@ -582,7 +582,6 @@ content {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  background-color: var(--mainColor);
   height: 100%;
   padding: 12px 0;
 }
@@ -595,6 +594,7 @@ content {
   padding-left: 12px;
   transition: var(--transition);
   color: var(--whiteColor);
+  border-right: 1px solid var(--mainColor30);
 }
 .navbar .mega .megaMenu .nav-pills button.active {
   background-color: var(--mainColor30);
@@ -646,7 +646,9 @@ content {
     flex-wrap: wrap;
   }
   .navbar .mega .megaMenu .nav-pills button {
-    flex: 1 100px;
+    border-right: unset;
+    border-bottom: 1px solid var(--mainColor30);
+    flex: 1 130px;
     flex-direction: column;
     text-align: center;
     padding: 12px !important;
