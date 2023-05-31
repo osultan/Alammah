@@ -16,34 +16,46 @@ $(document).ready(function () {
   //   prevScrollpos = currentScrollPos;
   // };
 
+  // Toggle mega menu on click of ".megaIcon" element
   $(".mega .megaIcon").click(function () {
-    $(".mega .megaMenu").toggleClass("showMegaMenu");
-
+    var megaMenu = $(this).siblings(".megaMenu");
+    if (megaMenu.hasClass("showMegaMenu")) {
+      megaMenu.removeClass("showMegaMenu");
+    } else {
+      $(".megaMenu.showMegaMenu").removeClass("showMegaMenu");
+      megaMenu.addClass("showMegaMenu");
+    }
   });
 
-    //ourInvestorsSlider
-    var ourInvestorsSlider = new Swiper(".ourInvestorsSlider", {
-      spaceBetween: 12,
-      speed: 1000,
-      scrollbar: {
-        el: ".swiper-scrollbar",
-        // dragSize: 70,
-        draggable: true,
-        hide: false,
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1200: {
-          slidesPerView: 4,
-        },
-      },
-    });
+  // Hide mega menu on collapse of ".navbar-toggler" element
+  $(".navbar-toggler").click(function () {
+    if ($(this).hasClass("collapsed")) {
+      $(".megaMenu.showMegaMenu").removeClass("showMegaMenu");
+    }
+  });
 
+  //ourInvestorsSlider
+  var ourInvestorsSlider = new Swiper(".ourInvestorsSlider", {
+    spaceBetween: 12,
+    speed: 1000,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      // dragSize: 70,
+      draggable: true,
+      hide: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
+  });
 
   //videoSlider
   var videoSlider = new Swiper(".videoSliderContainer", {

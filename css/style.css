@@ -585,6 +585,9 @@ content {
   height: 100%;
   padding: 12px 0;
 }
+.navbar .mega .megaMenu .nav-pills .num {
+  font-size: 30px;
+}
 .navbar .mega .megaMenu .nav-pills button {
   display: flex;
   align-items: center;
@@ -616,6 +619,35 @@ content {
 }
 .navbar .mega .megaMenu .tab-content {
   padding: 24px;
+}
+.navbar .mega .megaMenu .tab-content .item {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  padding-left: 8px;
+  color: var(--whiteColor);
+}
+.navbar .mega .megaMenu .tab-content .sub {
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--whiteColor);
+}
+.navbar .mega .megaMenu .tab-content .sub::before {
+  content: "";
+  display: flex;
+  width: 4px;
+  height: 1px;
+  background-color: var(--secondColor);
+  border-radius: 8px;
+}
+.navbar .mega .megaMenu .tab-content .level {
+  display: flex;
+  flex-direction: column;
+  color: var(--whiteColor);
 }
 .navbar .mega .megaMenu .tab-content a {
   color: var(--whiteColor);

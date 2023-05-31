@@ -552,29 +552,7 @@ content {
       visibility: hidden;
       transition: var(--transition);
       box-shadow: var(--BigShadow);
-      // .category {
-      //   display: flex;
-      //   gap: 8px;
-      //   margin-bottom: 24px;
-      //   img {
-      //     width: 24px;
-      //     height: 24px;
-      //     object-fit: contain;
-      //   }
-      //   .list {
-      //     display: flex;
-      //     flex-direction: column;
-      //     gap: 2px;
-      //     .title {
-      //       font-weight: bold;
-      //       text-transform: capitalize;
-      //       margin-bottom: 4px;
-      //     }
-      //     a {
-      //       text-transform: capitalize;
-      //     }
-      //   }
-      // }
+
       .nav-pills {
         display: flex;
         flex-direction: column;
@@ -582,6 +560,9 @@ content {
         // background-color: var(--mainColor);
         height: 100%;
         padding: 12px 0;
+        .num {
+          font-size: 30px;
+        }
         button {
           display: flex;
           align-items: center;
@@ -613,6 +594,40 @@ content {
       }
       .tab-content {
         padding: 24px;
+
+        .item {
+          display: flex;
+          flex-direction: column;
+          font-weight: bold;
+          padding-left: 8px;
+                    color: var(--whiteColor);
+
+        }
+        
+        .sub {
+          padding-left: 8px;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          text-transform: uppercase;
+          font-weight: normal;
+          color: var(--whiteColor);
+          &::before {
+            content: "";
+            display: flex;
+            width: 4px;
+            height: 1px;
+            background-color: var(--secondColor);
+            border-radius: 8px;
+          }
+        }
+        .level {
+          display: flex;
+          flex-direction: column;
+                    color: var(--whiteColor);
+
+        }
+
         a {
           color: var(--whiteColor);
           padding: 8px;
