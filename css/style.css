@@ -601,7 +601,7 @@ content {
   color: var(--mainColor);
 }
 .navbar .mega .megaMenu .nav-pills button.active img {
-  filter: invert(0) grayscale(0);
+  filter: brightness(1) invert(0);
 }
 .navbar .mega .megaMenu .nav-pills img {
   width: 20px;
@@ -609,7 +609,7 @@ content {
   -o-object-fit: contain;
      object-fit: contain;
   transition: var(--transition);
-  filter: invert(1) grayscale(1);
+  filter: brightness(0) invert(1);
 }
 .navbar .mega .megaMenu .nav-pills .title {
   text-transform: capitalize;

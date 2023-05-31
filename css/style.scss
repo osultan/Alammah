@@ -596,7 +596,7 @@ content {
             background-color: var(--mainColor30);
             color: var(--mainColor);
             img {
-              filter: invert(0) grayscale(0);
+              filter: brightness(1) invert(0);
             }
           }
         }
@@ -605,7 +605,7 @@ content {
           height: 20px;
           object-fit: contain;
           transition: var(--transition);
-          filter: invert(1) grayscale(1);
+          filter: brightness(0) invert(1);
         }
         .title {
           text-transform: capitalize;
