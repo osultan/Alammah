@@ -566,7 +566,7 @@ content {
   }
 }
 .navbar .mega .megaMenu {
-  background-image: linear-gradient(rgba(43, 78, 158, 0.8352941176), rgba(43, 78, 158, 0.9254901961)), url(../img/wireless-television-antenna-sign-download.jpg);
+  background-image: linear-gradient(rgba(116, 140, 194, 0.84), rgba(43, 78, 158, 0.925)), url(../img/wireless-television-antenna-sign-download.jpg);
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -3926,7 +3926,7 @@ footer .whatsIcon:hover {
 
 .ourWorld {
   padding: 70px 0;
-  background-image: linear-gradient(rgba(43, 78, 158, 0.8352941176), rgba(43, 78, 158, 0.9254901961)), url(../img/wireless-television-antenna-sign-download.jpg);
+  background-image: linear-gradient(rgba(116, 140, 194, 0.84), rgba(43, 78, 158, 0.925)), url(../img/wireless-television-antenna-sign-download.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: var(--whiteColor);
