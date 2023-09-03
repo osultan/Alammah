@@ -4111,3 +4111,114 @@ footer {
     font-size: 12px !important;
   }
 }
+
+.bestSelling {
+  padding: 70px 0;
+  position: relative;
+  .sliderBG {
+    border-radius: 16px;
+    padding: 24px 32px;
+    background: #f4f6fa;
+    position: relative;
+  }
+  .swiperBtns {
+    // display: flex;
+    // gap: 8px;
+    .swiper-button-next,
+    .swiper-button-prev {
+      // position: relative;
+      // left: unset;
+      // right: unset;
+      // top: unset;
+      // bottom: unset;
+      // margin: unset;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--mainColor);
+      background: #f4f6fa;
+
+      width: 40px;
+      height: 40px;
+      border: 2px solid var(--whiteColor);
+      border-radius: 100%;
+      transition: var(--transition);
+      opacity: 0.8;
+      &::after {
+        font-size: 24px;
+        font-family: "Font Awesome 6 Pro";
+        font-weight: 400;
+        @media (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+      &:hover {
+        opacity: 1;
+        background-color: var(--mainColor);
+        color: var(--whiteColor);
+      }
+      &.swiper-button-disabled {
+        opacity: 0.2;
+      }
+    }
+    .swiper-button-next {
+      left: unset;
+      right: -20px;
+      &::after {
+        content: "\f105" !important;
+      }
+    }
+    .swiper-button-prev {
+      right: unset;
+      left: -20px;
+      &::after {
+        content: "\f105" !important;
+        transform: scaleX(-1);
+      }
+    }
+  }
+}
+.careers {
+  padding: 70px 0;
+  h1{
+    font-weight: bold;
+    color: var(--mainColor);
+    margin-bottom: 60px;
+    position: relative;
+    width: fit-content;
+    padding: 12px 0 0 24px ;
+    text-transform: capitalize;
+    &::after {
+      content: "";
+      width: 28px;
+      height: 8px;
+      background-color: var(--mainColor);
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &::before {
+      content: "";
+      width: 8px;
+      height: 28px;
+      background-color: var(--mainColor);
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  form {
+    padding: 24px;
+    background: #f4f6fa;
+    border-radius: 8px;
+    .form-label {
+      font-weight: bold;
+      span{
+        color: #777;
+        text-transform: capitalize;
+        font-weight: normal;
+      }
+    }
+  }
+}

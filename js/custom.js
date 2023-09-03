@@ -15,7 +15,6 @@ $(document).ready(function () {
   //   }
   //   prevScrollpos = currentScrollPos;
   // };
-
   // Toggle mega menu on click of ".megaIcon" element
   $(".mega .megaIcon").click(function () {
     var megaMenu = $(this).siblings(".megaMenu");
@@ -26,14 +25,12 @@ $(document).ready(function () {
       megaMenu.addClass("showMegaMenu");
     }
   });
-
   // Hide mega menu on collapse of ".navbar-toggler" element
   $(".navbar-toggler").click(function () {
     if ($(this).hasClass("collapsed")) {
       $(".megaMenu.showMegaMenu").removeClass("showMegaMenu");
     }
   });
-
   //ourInvestorsSlider
   var ourInvestorsSlider = new Swiper(".ourInvestorsSlider", {
     spaceBetween: 12,
@@ -56,7 +53,6 @@ $(document).ready(function () {
       },
     },
   });
-
   //videoSlider
   var videoSlider = new Swiper(".videoSliderContainer", {
     spaceBetween: 0,
@@ -76,7 +72,6 @@ $(document).ready(function () {
       prevEl: ".videoSliderPrev",
     },
   });
-
   //MainSlider
   var mainSlider = new Swiper(".mainSliderContainer", {
     spaceBetween: 0,
@@ -186,7 +181,6 @@ $(document).ready(function () {
       disableOnInteraction: false,
     },
   });
-
   //project Details Slider
   var eventSlider = new Swiper(".eventSlider", {
     spaceBetween: 0,
@@ -206,6 +200,48 @@ $(document).ready(function () {
       prevEl: ".eventSliderPrev",
     },
   });
+  //bestSelling
+  var bestSellingSlider = new Swiper(".bestSellingSlider", {
+    pagination: {
+      el: ".bestSellingPagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".bestSellingNext",
+      prevEl: ".bestSellingPrev",
+    },
+    // centeredSlides: true,
+    loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    speed: 1000,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      991: {
+        slidesPerView: 3,
+      },
+      1400: {
+        slidesPerView: 4,
+      },
+    },
+  });
+  $(".bestSellingSlider").hover(
+    function () {
+      this.swiper.autoplay.stop();
+    },
+    function () {
+      this.swiper.autoplay.start();
+    }
+  );
 
   // quantity
   $(".plus").click(function () {
@@ -234,7 +270,6 @@ $(document).ready(function () {
         .addClass("col-sm-6 col-lg-4 col-xl-3");
     }
   });
-
   $(".product .content a , .Moreblogs .blog .description").each(function () {
     var text = $(this).text();
     if (text.length > 70) {

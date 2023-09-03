@@ -4009,4 +4009,111 @@ footer .whatsIcon:hover {
   p {
     font-size: 12px !important;
   }
+}
+.bestSelling {
+  padding: 70px 0;
+  position: relative;
+}
+.bestSelling .sliderBG {
+  border-radius: 16px;
+  padding: 24px 32px;
+  background: #f4f6fa;
+  position: relative;
+}
+.bestSelling .swiperBtns .swiper-button-next,
+.bestSelling .swiperBtns .swiper-button-prev {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mainColor);
+  background: #f4f6fa;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--whiteColor);
+  border-radius: 100%;
+  transition: var(--transition);
+  opacity: 0.8;
+}
+.bestSelling .swiperBtns .swiper-button-next::after,
+.bestSelling .swiperBtns .swiper-button-prev::after {
+  font-size: 24px;
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .bestSelling .swiperBtns .swiper-button-next::after,
+  .bestSelling .swiperBtns .swiper-button-prev::after {
+    font-size: 20px;
+  }
+}
+.bestSelling .swiperBtns .swiper-button-next:hover,
+.bestSelling .swiperBtns .swiper-button-prev:hover {
+  opacity: 1;
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
+.bestSelling .swiperBtns .swiper-button-next.swiper-button-disabled,
+.bestSelling .swiperBtns .swiper-button-prev.swiper-button-disabled {
+  opacity: 0.2;
+}
+.bestSelling .swiperBtns .swiper-button-next {
+  left: unset;
+  right: -20px;
+}
+.bestSelling .swiperBtns .swiper-button-next::after {
+  content: "\f105" !important;
+}
+.bestSelling .swiperBtns .swiper-button-prev {
+  right: unset;
+  left: -20px;
+}
+.bestSelling .swiperBtns .swiper-button-prev::after {
+  content: "\f105" !important;
+  transform: scaleX(-1);
+}
+
+.careers {
+  padding: 70px 0;
+}
+.careers h1 {
+  font-weight: bold;
+  color: var(--mainColor);
+  margin-bottom: 60px;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 12px 0 0 24px;
+  text-transform: capitalize;
+}
+.careers h1::after {
+  content: "";
+  width: 28px;
+  height: 8px;
+  background-color: var(--mainColor);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.careers h1::before {
+  content: "";
+  width: 8px;
+  height: 28px;
+  background-color: var(--mainColor);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.careers form {
+  padding: 24px;
+  background: #f4f6fa;
+  border-radius: 8px;
+}
+.careers form .form-label {
+  font-weight: bold;
+}
+.careers form .form-label span {
+  color: #777;
+  text-transform: capitalize;
+  font-weight: normal;
 }/*# sourceMappingURL=style.css.map */
